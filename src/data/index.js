@@ -1,12 +1,12 @@
-import KelasImage1 from "../assets/img/kelas/kelas-1.jpg";
-import KelasImage2 from "../assets/img/kelas/kelas-2.jpg";
-import KelasImage3 from "../assets/img/kelas/kelas-3.jpg";
-import KelasImage4 from "../assets/img/kelas/kelas-4.jpg";
-import KelasImage5 from "../assets/img/kelas/kelas-5.jpg";
-import KelasImage6 from "../assets/img/kelas/kelas-6.jpg";
-import KelasImage7 from "../assets/img/kelas/kelas-7.jpg";
-import KelasImage8 from "../assets/img/kelas/kelas-8.jpg";
-import KelasImage9 from "../assets/img/kelas/kelas-9.jpg";
+import ProdukImage1 from "../assets/img/Produk/Produk-1.jpg";
+import ProdukImage2 from "../assets/img/Produk/Produk-2.jpg";
+import ProdukImage3 from "../assets/img/Produk/Produk-3.jpg";
+import ProdukImage4 from "../assets/img/Produk/Produk-4.jpg";
+import ProdukImage5 from "../assets/img/Produk/Produk-5.jpg";
+import ProdukImage6 from "../assets/img/Produk/Produk-6.jpg";
+import ProdukImage7 from "../assets/img/Produk/Produk-7.jpg";
+import ProdukImage8 from "../assets/img/Produk/Produk-8.jpg";
+import ProdukImage9 from "../assets/img/Produk/Produk-9.jpg";
 
 import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
@@ -32,10 +32,10 @@ export const navLinks = [
   
 ];
 
-export const semuaKelas = [
+export const semuaProduk = [
   {
     id: 1,
-    image: KelasImage1,
+    image: ProdukImage1,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -43,12 +43,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Character Illustration with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "1300",
   },
   {
     id: 2,
-    image: KelasImage2,
+    image: ProdukImage2,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -56,12 +56,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "UI UX Website Design for Beginner with Figma",
     price: "Rp. 340.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "1600",
   },
   {
     id: 3,
-    image: KelasImage3,
+    image: ProdukImage3,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -69,12 +69,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Mastering Web Developer Bootstrap 5",
     price: "Rp. 280.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "1900",
   },
   {
     id: 4,
-    image: KelasImage4,
+    image: ProdukImage4,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -82,12 +82,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Mastering Logo with Adobe Illustrator",
     price: "Rp. 420.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "",
   },
   {
     id: 5,
-    image: KelasImage5,
+    image: ProdukImage5,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -95,12 +95,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "3D Modelling for Beginner with 3D Blender",
     price: "Rp. 380.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "300",
   },
   {
     id: 6,
-    image: KelasImage6,
+    image: ProdukImage6,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -108,12 +108,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star",
     title: "Mastering Icon Design with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "600",
   },
   {
     id: 7,
-    image: KelasImage7,
+    image: ProdukImage7,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -121,12 +121,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Design Vektor with Corel Draw CC for Beginner",
     price: "Rp. 340.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "",
   },
   {
     id: 8,
-    image: KelasImage8,
+    image: ProdukImage8,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -134,12 +134,12 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "UI UX Design with Adobe XD for Beginner",
     price: "Rp. 400.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "300",
   },
   {
     id: 9,
-    image: KelasImage9,
+    image: ProdukImage9,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -147,15 +147,15 @@ export const semuaKelas = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Mastering Mobile Developer with Flutter",
     price: "Rp. 320.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "600",
   },
 ];
 
-export const kelasTerbaru = [
+export const ProdukTerbaru = [
   {
     id: 1,
-    image: KelasImage1,
+    image: ProdukImage1,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -163,12 +163,12 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star-half-stroke",
     title: "Character Illustration with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "",
   },
   {
     id: 2,
-    image: KelasImage2,
+    image: ProdukImage2,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -176,12 +176,12 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "UI UX Website Design for Beginner with Figma",
     price: "Rp. 340.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "200",
   },
   {
     id: 3,
-    image: KelasImage3,
+    image: ProdukImage3,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -189,12 +189,12 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "Mastering Web Developer Bootstrap 5",
     price: "Rp. 280.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "400",
   },
   {
     id: 4,
-    image: KelasImage4,
+    image: ProdukImage4,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -202,12 +202,12 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "Mastering Logo with Adobe Illustrator",
     price: "Rp. 420.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "",
   },
   {
     id: 5,
-    image: KelasImage5,
+    image: ProdukImage5,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -215,12 +215,12 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "3D Modelling for Beginner with 3D Blender",
     price: "Rp. 380.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "200",
   },
   {
     id: 6,
-    image: KelasImage6,
+    image: ProdukImage6,
     star1: "fa-solid fa-star",
     star2: "fa-solid fa-star",
     star3: "fa-solid fa-star",
@@ -228,7 +228,7 @@ export const kelasTerbaru = [
     star5: "fa-solid fa-star",
     title: "Mastering Icon Design with Adobe Illustrator",
     price: "Rp. 300.000",
-    buy: "Beli Kelas",
+    buy: "Beli Produk",
     delay: "400",
   },
 ];
@@ -390,7 +390,7 @@ export const faq = [
   {
     id: 8,
     eventKey: 7,
-    title: "Apakah boleh ganti Kelas ketika sudah Membeli?",
+    title: "Apakah boleh ganti Produk ketika sudah Membeli?",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estlaborum.",
   },
 ];

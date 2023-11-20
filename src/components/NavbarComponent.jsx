@@ -52,9 +52,9 @@ const NavbarComponent = () => {
               );
             })}
           </Nav>
-          <div>
+          {/* <div>
             <button className="btn btn-outline-primary rounded-1 me-2">Daftar</button>
-          </div>
+          </div> */}
           <div>
             <button className="btn btn-primary rounded-1">Masuk</button>
           </div>

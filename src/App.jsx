@@ -4,7 +4,7 @@ import NavbarComponent from "./components/NavbarComponent"
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import Kelas from "./pages/Notifikasi";
+import Produk from "./pages/Notifikasi";
 import FaqPage from './pages/Keranjang';
 import './App.css';
 
@@ -16,7 +16,7 @@ function App() {
 
       <Routes>
         <Route path='/' Component={Home}/>
-        <Route path='/kelas' Component={Kelas}/>
+        <Route path='/Produk' Component={Produk}/>
         <Route path='/faq' Component={FaqPage}/>
       </Routes>
       

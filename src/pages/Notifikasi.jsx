@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Kelas = () => {
+const Produk = () => {
   return (
     <div className='homepage'>
     <header className='w-100 min-vh-100'></header>
@@ -8,4 +8,4 @@ const Kelas = () => {
   )
 }
 
-export default Kelas
+export default Produk
