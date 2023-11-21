@@ -1,10 +1,13 @@
 import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";       
-import {ProdukTerbaru} from "../data/index"                                                                                                                                                                                        
+import {ProdukTerbaru} from "../data/index";
+import Footer from "../components/Footer";
+import NavbarComponent from "../components/NavbarComponent";                                                                                                                                                                                    
 
 const Home = () => {
   return (
     <div className='homepage'>
+      <NavbarComponent/>
       <header className="w-90 min-vh-100 d-flex align-items-center rounded">
         <Container>
           <Row className="header-box align-center mt-4"><h3>Selamat Datang di Website</h3>
@@ -45,6 +48,7 @@ const Home = () => {
       </Row>
         </Container>
       </div>
+      <Footer/>
     </div>
     
   )
