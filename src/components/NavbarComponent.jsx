@@ -3,6 +3,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import {useState,useEffect} from "react";
 import {navLinks} from "../data/index";
 import {NavLink} from "react-router-dom";
+import {FaCartPlus} from "react-icons/fa"
 import React from "react";
 
 const NavbarComponent = () => {
@@ -34,13 +35,13 @@ const NavbarComponent = () => {
         
               
             
-<div className="col-1 me-3"></div>
+<div className="col-1 me-5"></div>
           <Nav className="mx-auto">
           <div className="search">
                 <input type="text" className="form-control" placeholder="Cari apa?" />
                 
               </div>
-              <div><button className="btn btn-primary">Search</button></div>
+              <div><button className="btn btn-primary me-5">Search</button></div>
             {navLinks.map((link) => {
               
               return (
@@ -52,11 +53,11 @@ const NavbarComponent = () => {
               );
             })}
           </Nav>
-          {/* <div>
-            <button className="btn btn-outline-primary rounded-1 me-2">Daftar</button>
-          </div> */}
+          <div className="mr-5">
+            <FaCartPlus/>
+          </div>
           <div>
-            <button className="btn btn-primary rounded-1">Masuk</button>
+            <button className="btn btn-primary rounded-1 m-5">Masuk</button>
           </div>
         </Navbar.Collapse>
       </Container>

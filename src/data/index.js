@@ -23,11 +23,7 @@ export const navLinks = [
     path: "Notifikasi",
     text: "Notifikasi",
   },
-  {
-    id: 3,
-    path: "Keranjang",
-    text: "Keranjang",
-  },
+
   
   
 ];
