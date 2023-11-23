@@ -1,0 +1,25 @@
+.userimg {
+    position: fixed;
+    
+}
+
+.p-1 {
+    text-decoration: none;
+    overflow:hidden ;
+}
+
+.bg {
+    background-color: #0081C9;
+}
+
+.buton {
+    background-color: #3F8CFF;
+    color: #E3E3E3;
+    width: 18vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
