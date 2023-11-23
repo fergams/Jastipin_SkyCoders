@@ -137,6 +137,11 @@ header {
     height: 250px;
 }
 
+.fitur {
+    background-image: url("../src/assets/img/unggulan.png");
+    height: 100px;
+}
+
 .footer {
     background-image: url("../src/assets/img/footer.png");
     width: 100%;

@@ -18,6 +18,7 @@ const Home = () => {
           <Row className="header-box align-center fw-bold"><h6> di Indonesia maupun dari luar negeri</h6></Row>
         </Container>
       </header>
+      <div className='fitur mr-5'></div>
       <div className='produk w-100 min-vh-100'>
         <Container>
       {/* <Row>
