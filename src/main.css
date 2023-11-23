@@ -59,7 +59,7 @@
 
 /*STYLE HEADER */
 header {
-    background: #0081C9; /* fallback for old browsers */
+    background-image:url("../src/assets/img/landing.png");/* fallback for old browsers */
   /* background: -webkit-linear-gradient(to left, #4096f8, #6bb2f5, #4f43f1); 
   background: linear-gradient(to left, #6b7ff3, #549ae9, #6f65fd);  */
 }
@@ -135,5 +135,11 @@ header {
 .homepage .produk .row:nth-child(2) img {
     width: 100%;
     height: 250px;
+}
+
+.footer {
+    background-image: url("../src/assets/img/footer.png");
+    width: 100%;
+    height: 380px;
 }
 
