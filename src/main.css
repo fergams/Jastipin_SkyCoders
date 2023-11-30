@@ -56,6 +56,14 @@
     size: 0cm;
     max-width: 5%;
 }
+.avatar {
+    --size: 40px;
+    background-image: url("../src/assets/img/Testimonial/people-1.jpg");
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+   }
+   
 
 .ikoncart {
     size: 10em;

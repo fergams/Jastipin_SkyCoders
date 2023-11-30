@@ -10,9 +10,9 @@ const Autentikasi = () => {
   };
   return (
     <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-      <div className="bg">
-        <div className="p-5 rounded">
-          {<img src={user} width="120" height="120" alt="Profle" className="position-relative  start-50 translate-middle m-2 heihgt-20" />}
+      <div className="bg rounded">
+        <div className="p-5 rounded-5">
+          {<img src={user} width="120" height="120" alt="Profle" className="position-relative  start-50 translate-middle m-2 heihgt-20 mt-5" />}
           <h3 className="text-light  text-center" style={{ padding: "3vh" }}>
             Masukkan Kode Autentikasi
           </h3>
