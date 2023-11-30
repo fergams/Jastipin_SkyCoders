@@ -2,7 +2,8 @@ import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";       
 import {ProdukTerbaru} from "../data/index";
 import Footer from "../components/Footer";
-import NavbarComponent from "../components/NavbarComponent";                                                                                                                                                                                    
+import NavbarComponent from "../components/NavbarComponent";  
+import {FaCartPlus} from "react-icons/fa"                                                                                                                                                                                  
 
 const Home = () => {
   return (
@@ -19,31 +20,82 @@ const Home = () => {
         </Container>
       </header>
       <div className='fitur mr-5'></div>
-      <div className='produk w-100 min-vh-100'>
+      <div className='produk '>
         <Container>
-      {/* <Row>
-        <Col className='text-center mt-4'>
-        <button className="btn btn-outline-primary rounded-5 btn-lg me-2" onClick={() => navigate("/morearticle")}>Makanan <i className="fa-solid fa-chevron-right ms-1"></i></button>
-        <button className="btn btn-outline-primary rounded-5 btn-lg me-2" onClick={() => navigate("/morearticle")}>Eletronik <i className="fa-solid fa-chevron-right ms-1"></i></button>
-        <button className="btn btn-outline-primary rounded-5 btn-lg" onClick={() => navigate("/morearticle")}>Pakaian <i className="fa-solid fa-chevron-right ms-1"></i></button>
-        </Col>
-      </Row> */}
       <Row>
-            <Col>
-              <h1 className="text-center fw-bold mt-5">Rekomendasi Produk</h1>
-            </Col>
-          </Row>
+      <h1 className="text-left fw-bold">Kategori Produk</h1>
+      <div class="card mt-4 mb-5 ">
+        <div class="card-img"></div>
+          <div class="card-info">
+            <div class="card-text">
+              <p class="text-title">Makanan</p>
+           </div>
+            <div class="card-icon">
+            <svg viewBox="0 0 28 25" class="icon">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-4 mb-5 ">
+        <div class="card-img"></div>
+          <div class="card-info">
+            <div class="card-text">
+              <p class="text-title">Elektronik</p>
+           </div>
+            <div class="card-icon">
+            <svg viewBox="0 0 28 25" class="icon">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-4 mb-5 ">
+        <div class="card-img"></div>
+          <div class="card-info">
+            <div class="card-text">
+              <p class="text-title">Pakaian</p>
+           </div>
+            <div class="card-icon">
+            <svg viewBox="0 0 28 25" class="icon">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-4 mb-5 ">
+        <div class="card-img"></div>
+          <div class="card-info">
+            <div class="card-text">
+              <p class="text-title">Kosmetik</p>
+           </div>
+            <div class="card-icon">
+            <svg viewBox="0 0 28 25" class="icon">
+              <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      </Row>
+      <Row>
+        <h1 className="text-left fw-bold">Kategori Produk</h1></Row>
       <Row>
         {ProdukTerbaru.map((Produk) => {
           return <Col key={Produk.id} className='rounded'>
-            <img src={Produk.image} alt="unspalsh.com" className='mb-5 rounded shadow mt-3'/>
-            <div className='star mb-5'> 
-              <i className={Produk.star1}></i>
-              <i className={Produk.star2}></i>
-              <i className={Produk.star3}></i>
-              <i className={Produk.star4}></i>
-              <i className={Produk.star5}></i>
-            </div>
+            <img src={Produk.image} alt="unspalsh.com" className='mb-2 rounded shadow mt-3'/>
+            <h5 className='fw-bold'>Nama Produk</h5>
+            <p>Produk ini adalah produk asli indonesia</p>
+            <Row>
+              <Col><FaCartPlus/>
+              </Col>
+              <Col >
+            <h5 className='fw-bold'>Rp 10.000</h5>
+              </Col>
+            </Row>
+            
           </Col>
         })}
       </Row>
