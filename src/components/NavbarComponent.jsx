@@ -5,8 +5,12 @@ import {navLinks} from "../data/index";
 import {NavLink} from "react-router-dom";
 import {FaCartPlus} from "react-icons/fa"
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 const NavbarComponent = () => {
+  
+  let navigate = useNavigate();
   const [changeColor, SetChangeColor] = useState(false);
 
   const ChangeBackgroundColor = () => {
@@ -33,7 +37,7 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-          <Nav className="mx-auto">
+          <Nav className="mx-auto mt-3">
 <form class="form">
     <label for="search">
         <input class="input" type="text" required="" placeholder="Cari Produk atau barang" id="search"/>
@@ -58,11 +62,9 @@ const NavbarComponent = () => {
               );
             })}
           </Nav>
-          <div className="ikoncart ">
-            <FaCartPlus/>
-          </div>
+            <FaCartPlus className="ikoncart fa-2xl" onClick={() => navigate("/Keranjang")}/>
           <div>
-            <button className="btn btn-primary rounded-1 m-5">Masuk</button>
+            <button className="btn btn-primary rounded-1 m-5 " onClick={() => navigate("/Login")}>Masuk</button>
           </div>
         </Navbar.Collapse>
       </Container>

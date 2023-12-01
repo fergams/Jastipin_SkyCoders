@@ -1,7 +1,10 @@
 import React from 'react'
 import user from "../assets/img/user.png";
+import { useNavigate } from "react-router-dom";
 
 const Signin = () => {
+  
+  let navigate = useNavigate();
   return (<div className='login-logo w-100 min-vh-100 d-flex align-items-left rounded'>
 
         <div class="form-container">
@@ -10,10 +13,10 @@ const Signin = () => {
         <input type="text" class="inputl" placeholder="Name"/>
         <input type="email" class="inputl" placeholder="Email"/>
         <input type="password" class="inputl" placeholder="Password"/>
-        <button class="form-btn">Create account</button>
+        <button class="form-btn">Masuk</button>
       </form>
       <p class="sign-up-label">
-        Already have an account?<span class="sign-up-link">Log in</span>
+        Already have an account?<span class="sign-up-link" onClick={() => navigate("/Login")}>Log in</span>
       </p>
       <div class="buttons-container">
         <div class="google-login-button">

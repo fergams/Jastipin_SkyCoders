@@ -19,7 +19,7 @@ const Home = () => {
           <Row className="header-box align-center fw-bold"><h6> di Indonesia maupun dari luar negeri</h6></Row>
         </Container>
       </header>
-      <div className='fitur mr-5'></div>
+      <div className='fitur '></div>
       <div className='produk '>
         <Container>
       <Row>
@@ -89,7 +89,7 @@ const Home = () => {
             <h5 className='fw-bold'>Nama Produk</h5>
             <p>Produk ini adalah produk asli indonesia</p>
             <Row>
-              <Col><FaCartPlus/>
+              <Col><FaCartPlus className='ikoncart fa-2xl'/>
               </Col>
               <Col >
             <h5 className='fw-bold'>Rp 10.000</h5>

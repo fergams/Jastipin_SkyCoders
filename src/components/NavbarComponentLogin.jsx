@@ -30,8 +30,8 @@ const NavbarComponentLogin = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-          <Nav className="mx-auto">
-<form class="form">
+          <Nav className="mx-auto mt-3">
+<form class="form ">
     <label for="search">
         <input class="input" type="text" required="" placeholder="Cari Produk atau barang" id="search"/>
         <div class="fancy-bg"></div>
@@ -55,10 +55,8 @@ const NavbarComponentLogin = () => {
               );
             })}
           </Nav>
-          <div className="ikoncart ">
-            <FaCartPlus/>
-          </div>
-          
+          <div>
+            <FaCartPlus className='ikoncart fa-2xl' onClick={() => navigate("/Keranjang")}/></div>
         <div class="avatar"></div>
         </Navbar.Collapse>
       </Container>
