@@ -9,6 +9,7 @@ import Autentikasi from "./pages/Autentikasi";
 import "./App.css";
 import Signin from "./pages/Signin";
 import Login from "./pages/Login";
+import KatalogMakanan from "./pages/KatalogMakanan";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Notifikasi" Component={Notifikasi} />
         <Route path="/Signin" Component={Signin} />
         <Route path="/Login" Component={Login} />
+        <Route path="/KatalogMakanan" Component={KatalogMakanan} />
       </Routes>
 
 

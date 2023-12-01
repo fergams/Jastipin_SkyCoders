@@ -27,7 +27,7 @@ const HomeLogin = () => {
       <Row>
       <h1 className="text-left fw-bold">Kategori Produk</h1>
       <div class="card mt-4 mb-5 ">
-        <div class="card-img"></div>
+        <div class="card-img" onClick={() => navigate("/KatalogMakanan")}></div>
           <div class="card-info">
             <div class="card-text">
               <p class="text-title">Makanan</p>
