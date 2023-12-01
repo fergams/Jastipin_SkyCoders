@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className='homepage'>
       <NavbarComponent/>
-      <header className="w-90 min-vh-100 d-flex align-items-center rounded">
+      <header className="w-90 min-vh-100 d-flex align-items-center">
         <Container>
           <Row className="header-box align-center mt-4"><h3>Selamat Datang di Website</h3>
           </Row>
