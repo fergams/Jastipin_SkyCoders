@@ -7,9 +7,9 @@ const Signin = () => {
         <div class="form-container">
         {<img src={user} width="120" height="120" alt="Profle" className="position-relative  start-50 translate-middle m-2 heihgt-20 mt-5" />}     
       <form class="form">
-        <input type="text" class="input" placeholder="Name"/>
-        <input type="email" class="input" placeholder="Email"/>
-        <input type="password" class="input" placeholder="Password"/>
+        <input type="text" class="inputl" placeholder="Name"/>
+        <input type="email" class="inputl" placeholder="Email"/>
+        <input type="password" class="inputl" placeholder="Password"/>
         <button class="form-btn">Create account</button>
       </form>
       <p class="sign-up-label">

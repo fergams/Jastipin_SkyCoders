@@ -8,6 +8,7 @@ import Notifikasi from "./pages/Notifikasi";
 import Autentikasi from "./pages/Autentikasi";
 import "./App.css";
 import Signin from "./pages/Signin";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/HomeLogin" Component={HomeLogin} />
         <Route path="/Notifikasi" Component={Notifikasi} />
         <Route path="/Signin" Component={Signin} />
+        <Route path="/Login" Component={Login} />
       </Routes>
 
 
