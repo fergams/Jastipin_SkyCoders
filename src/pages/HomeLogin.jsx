@@ -88,13 +88,13 @@ const HomeLogin = () => {
         {ProdukTerbaru.map((Produk) => {
           return <Col key={Produk.id} className='rounded'>
             <img src={Produk.image} alt="unspalsh.com" className='mb-2 rounded shadow mt-3'/>
-            <h5 className='fw-bold'>Nama Produk</h5>
+            <h3 className='fw-bold'>Nama Produk</h3>
             <p>Produk ini adalah produk asli indonesia</p>
             <Row>
               <Col><FaCartPlus className='ikoncart fa-2xl' />
               </Col>
               <Col >
-            <h5 className='fw-bold'>Rp 10.000</h5>
+            <h3 className='fw-bold'>Rp 10.000</h3>
               </Col>
             </Row>
             

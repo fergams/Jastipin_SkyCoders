@@ -47,7 +47,7 @@ const NavbarComponentLogin = () => {
             {navLinks.map((link) => {
               
               return (
-                <div className="nav-link" key={link.id}>
+                <div className="nav-link mt-1.6" key={link.id}>
                   <NavLink to={link.path} className={({ isActive, isPending }) =>
                    isPending ? "pending" : isActive ? "active" : ""
                   } end>{link.text}</NavLink>

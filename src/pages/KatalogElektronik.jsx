@@ -5,12 +5,9 @@ import Footer from "../components/Footer";
 import NavbarComponentLogin from "../components/NavbarComponentLogin";  
 import {FaCartPlus} from "react-icons/fa" 
 import Dropdown from '../components/Dropdownw';
-import { useNavigate } from "react-router-dom";
 import Card from "../components/Card"
 
-const KatalogMakanan = () => {
-  
-  let navigate = useNavigate();
+const KatalogElektronik = () => {
   return (<div className='homepage'>
   <NavbarComponentLogin/>
   <header className="hkat d-flex align-items-center rounded">
@@ -26,8 +23,7 @@ const KatalogMakanan = () => {
     <Container>
   <Row>
     <Col>
-  <Card 
-onClick={() => navigate("/KatalogMakanan")}/>
+  <Card/>
     </Col>
     <Col>
   <Card/>
@@ -76,4 +72,4 @@ onClick={() => navigate("/KatalogMakanan")}/>
   )
 }
 
-export default KatalogMakanan
+export default KatalogElektronik

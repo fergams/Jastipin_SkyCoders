@@ -1,5 +1,5 @@
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
 }
 
 :root {
@@ -79,7 +79,7 @@
     --focus-input-bg-color: transparent;
     --text-color: #949faa;
     --active-color: #1b9bee;
-    --width-of-input: 1000px;
+    --width-of-input: 700px;
     --inline-padding-of-input: 1.2em;
     --gap: 0.9rem;
   }
@@ -87,7 +87,6 @@
   .form {
     font-size: 0.9rem;
     display: flex;
-    gap: 0.5rem;
     align-items: center;
     width: var(--width-of-input);
     position: relative;
@@ -254,14 +253,17 @@ header {
 .homepage .produk .row:nth-child(1){
     padding-top: 50px;
 }
-.homepage .produk .row:nth-child(1) h1,
-.homepage .produk .row:nth-child(1) p {
+.homepage .produk .row:nth-child(3) h1,
+.homepage .produk .row:nth-child(3) p {
     color: var(--color-text);
+    font-size: 1.2rem;
 }
 .homepage .produk .row:nth-child(3) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0rem 3rem 6rem 3rem;
     box-sizing: content-box;
+    gap: 15px;
 }
 .homepage .produk .row:nth-child(3) img {
     width: 100%;
@@ -316,6 +318,7 @@ header {
     width: 2em;
     height: 2.5em;
     transition: all .3s ease-in-out;
+    color: #ececec;
   }
   
   .icon {
@@ -352,6 +355,7 @@ header {
   .card:hover .card-icon {
     opacity: 1;
     transform: translateX(20%);
+    color: #ffffff;
   }
   
   .login-logo {
@@ -495,6 +499,7 @@ header {
   /*katalog*/
   .listmakanan {
     display: grid;
-    height: 300px;
+    height: 280px;
+    margin-left: 500x;
     box-sizing: content-box;
   }

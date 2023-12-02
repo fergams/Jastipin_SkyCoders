@@ -9,9 +9,9 @@ function Dropdownw() {
 
       <Dropdown.Menu>
         <Dropdown.Item href="/KatalogMakanan">Makanan</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Elektronik</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Pakaian</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Kosmetik</Dropdown.Item>
+        <Dropdown.Item href="/KatalogElektronik">Elektronik</Dropdown.Item>
+        <Dropdown.Item href="/KatalogPakaian">Pakaian</Dropdown.Item>
+        <Dropdown.Item href="/KatalogKosmetik">Kosmetik</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

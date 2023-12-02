@@ -10,6 +10,10 @@ import "./App.css";
 import Signin from "./pages/Signin";
 import Login from "./pages/Login";
 import KatalogMakanan from "./pages/KatalogMakanan";
+import KatalogElektronik from "./pages/KatalogElektronik";
+import KatalogPakaian from "./pages/KatalogPakaian";
+import KatalogKosmetik from "./pages/KatalogKosmetik";
+import DetailProduk from "./pages/DetailProduk";
 
 function App() {
   return (
@@ -24,6 +28,10 @@ function App() {
         <Route path="/Signin" Component={Signin} />
         <Route path="/Login" Component={Login} />
         <Route path="/KatalogMakanan" Component={KatalogMakanan} />
+        <Route path="/KatalogElektronik" Component={KatalogElektronik} />
+        <Route path="/KatalogPakaian" Component={KatalogPakaian} />
+        <Route path="/KatalogKosmetik" Component={KatalogKosmetik} />
+        <Route path="/DetailProduk" Component={DetailProduk} />
       </Routes>
 
 
