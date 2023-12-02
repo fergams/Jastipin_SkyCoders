@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import NavbarComponentLogin from "../components/NavbarComponentLogin";  
 import {FaCartPlus} from "react-icons/fa" 
 import Dropdown from '../components/Dropdownw';
+import Card from "../components/Card"
 
 const KatalogMakanan = () => {
   return (<div className='homepage'>
@@ -19,24 +20,50 @@ const KatalogMakanan = () => {
     </Container>
   </header>
   <div className='fitur mr-5'></div>
-  
     <Container>
   <Row>
-    {ProdukTerbaru.map((Produk) => {
-      return <Col key={Produk.id} className='rounded'>
-        <img src={Produk.image} alt="unspalsh.com" className='mb-2 rounded shadow mt-3'/>
-        <h5 className='fw-bold'>Nama Produk</h5>
-        <p>Produk ini adalah produk asli indonesia</p>
-        <Row>
-          <Col><FaCartPlus className='ikoncart fa-2xl' />
-          </Col>
-          <Col >
-        <h5 className='fw-bold'>Rp 10.000</h5>
-          </Col>
-        </Row>
-        
-      </Col>
-    })}
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+  </Row>
+  <Row>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
+    <Col>
+  <Card/>
+    </Col>
   </Row>
     </Container>
   

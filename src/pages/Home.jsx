@@ -3,9 +3,11 @@ import {Container, Row, Col} from "react-bootstrap";
 import {ProdukTerbaru} from "../data/index";
 import Footer from "../components/Footer";
 import NavbarComponent from "../components/NavbarComponent";  
-import {FaCartPlus} from "react-icons/fa"                                                                                                                                                                                  
+import {FaCartPlus} from "react-icons/fa"      
+import { useNavigate } from "react-router-dom";                                                                                                                                                                            
 
 const Home = () => {
+  let navigate = useNavigate();
   return (
     <div className='homepage'>
       <NavbarComponent/>
@@ -25,7 +27,7 @@ const Home = () => {
       <Row>
       <h1 className="text-left fw-bold">Kategori Produk</h1>
       <div class="card mt-4 mb-5 ">
-        <div class="card-img"></div>
+        <div class="card-img" onClick={() => navigate("/KatalogMakanan")}></div>
           <div class="card-info">
             <div class="card-text">
               <p class="text-title">Makanan</p>
