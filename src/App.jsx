@@ -15,6 +15,7 @@ import KatalogPakaian from "./pages/KatalogPakaian";
 import KatalogKosmetik from "./pages/KatalogKosmetik";
 import DetailProduk from "./pages/DetailProduk";
 import KebijakanPrivasi from "./pages/KebijakanPrivasi";
+import SyaratKetentuan from "./pages/SyaratKetentuan";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/KatalogKosmetik" Component={KatalogKosmetik} />
         <Route path="/DetailProduk" Component={DetailProduk} />
         <Route path="/KebijakanPrivasi" Component={KebijakanPrivasi} />
+        <Route path="/SyaratKetentuan" Component={SyaratKetentuan} />
       </Routes>
 
 
