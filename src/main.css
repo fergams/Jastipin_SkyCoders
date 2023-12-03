@@ -503,3 +503,53 @@ header {
     margin-left: 500x;
     box-sizing: content-box;
   }
+
+  .detailproduk {
+    font-size: 3rem;
+  }
+
+  .varian {
+    margin-left: 100px;
+    padding-left: 5rem;
+  }
+
+.quantity {
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 4.2rem;
+  }
+  .quantity-r {
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+.quantity-label {
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .judul{
+    background-color: #D7E3F6;
+    height: 4rem;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight:bolder;
+    line-height: 4rem;
+  }
+  .text-detail{
+    padding-top: 25px;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 1rem;
+  }

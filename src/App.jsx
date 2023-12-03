@@ -14,6 +14,7 @@ import KatalogElektronik from "./pages/KatalogElektronik";
 import KatalogPakaian from "./pages/KatalogPakaian";
 import KatalogKosmetik from "./pages/KatalogKosmetik";
 import DetailProduk from "./pages/DetailProduk";
+import KebijakanPrivasi from "./pages/KebijakanPrivasi";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/KatalogPakaian" Component={KatalogPakaian} />
         <Route path="/KatalogKosmetik" Component={KatalogKosmetik} />
         <Route path="/DetailProduk" Component={DetailProduk} />
+        <Route path="/KebijakanPrivasi" Component={KebijakanPrivasi} />
       </Routes>
 
 

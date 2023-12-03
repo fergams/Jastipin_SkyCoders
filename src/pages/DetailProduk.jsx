@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";  
-import NavbarComponentLogin from "../components/NavbarComponentLogin";  
+import NavbarComponentLogin from "../components/NavbarComponentLogin"; 
+import Item from "../components/Itemm" ;
 
 const DetailProduk = () => {
   return (
@@ -14,6 +15,7 @@ const DetailProduk = () => {
       <div></div>
     </Container>
     </header>
+    <Item/>
     </div>
   )
 }
