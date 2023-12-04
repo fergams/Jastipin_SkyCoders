@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import ModalKeluar from "../components/ModalKeluar"
 
-const BelumDibayar = () => {
+const Dikirim = () => {
   return (
     <div className='homepage'>
     <NavbarComponentLogin/>
@@ -81,9 +81,12 @@ const BelumDibayar = () => {
                     </Row>
                       <Row>
                         <Col>
+                        <p className='mt-5 ms-4'>Pesanan telah diterima oleh yang bersangkutan</p></Col>
+                        <Col>
                         <Button primary floated='right' className='mt-5'>
-            Bayar Sekarang
-          </Button></Col>
+            Pesanan Diterima
+          </Button>
+                        </Col>
                       </Row>
                   </Row>
                 </div>
@@ -103,4 +106,4 @@ const BelumDibayar = () => {
   )
 }
 
-export default BelumDibayar
+export default Dikirim

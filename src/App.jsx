@@ -19,6 +19,7 @@ import SyaratKetentuan from "./pages/SyaratKetentuan";
 import BelumDibayar from "./pages/BelumDibayar";
 import ModalKeluar from "./components/ModalKeluar";
 import Pembayaran from "./pages/Pembayaran";
+import Dikirim from "./pages/Dikirim";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Route path="/BelumDibayar" Component={BelumDibayar} />
         <Route path="/ModalKeluar" Component={ModalKeluar} />
         <Route path="/Pembayaran" Component={Pembayaran} />
+        <Route path="/Dikirim" Component={Dikirim} />
       </Routes>
 
 
