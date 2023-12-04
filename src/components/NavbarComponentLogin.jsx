@@ -4,10 +4,8 @@ import {useState,useEffect} from "react";
 import {navLinks} from "../data/index";
 import {NavLink} from "react-router-dom";
 import {FaCartPlus} from "react-icons/fa"
-import { useNavigate } from "react-router-dom";  
 
 const NavbarComponentLogin = () => {
-  let navigate = useNavigate();
     const [changeColor, SetChangeColor] = useState(false);
     const ChangeBackgroundColor = () => {
         if (window.scrollY > 10) {
@@ -28,7 +26,7 @@ const NavbarComponentLogin = () => {
         <img className="imggg"
              src="./public/logo.jpg"
              alt="image"/>
-        <Navbar.Brand href="/HomeLogin" className="fs-3 fw-bold">Jastip.in</Navbar.Brand>
+        <Navbar.Brand href="/" className="fs-3 fw-bold">Jastip.in</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
@@ -59,7 +57,7 @@ const NavbarComponentLogin = () => {
           </Nav>
           <div>
             <FaCartPlus className='ikoncart fa-2xl' onClick={() => navigate("/Keranjang")}/></div>
-        <div class="avatar" onClick={() => navigate("/StatusPesanan")}></div>
+        <div class="avatar"></div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

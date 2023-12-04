@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+.footer {
+    background-color: #0081C9;
+    display: flex;
+}
+.footer1 img {
+    width: 133px;
+    height: 141px;
+    flex-shrink: 0;
+}
+
+.footer1 {
+    margin-left: 8%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    width: 30%;
+}
+
+.footer1 p {
+    margin-left: 4%;
+}
+
+.ket {
+    margin-left: 2%;
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ket p span {
+    font-weight: 1000;
+}
+
+.ket p:nth-child(1) {
+    margin-top: 2%;
+}
+
+
+.footer2 img {
+    width: 100px;
+    height: 28.85px;
+}
+
+.footer2 {
+    color: white;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.footer3 {
+    color: white;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.footer3 .tentang p {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.footer4 {
+    color: white;
+    margin-top: 7%;
+    margin-left: 10%;
+  
+    
+}
+
+.icon img {
+    height: 41px;
+    right: 41px;
+    margin-left: 90%;
+  
+}

@@ -32,28 +32,27 @@ const Selesai = () => {
             </Row>
             <Row>
                 <Col xs={6} md={4} >
-                  <hr />
                 <Nav defaultActiveKey="/home" className="flex-column mt-5">
-                <Nav.Link href="/Selesai"><Icon name='user' className='' />Profil Saya</Nav.Link>
-                <Nav.Link href="/Selesai"><Icon name='cart' className='' />Pesanan</Nav.Link>
-                <Nav.Link href="/Selesai"><Icon name='chat' className='' />Obrolan</Nav.Link>
-                <Nav.Link href="/Selesai"><Icon name='money' className='' />Mulai Berjualan</Nav.Link>
+                <Nav.Link href="/home"><Icon name='user' className='' />Profil Saya</Nav.Link>
+                <Nav.Link eventKey="link-1"><Icon name='cart' className='' />Pesanan</Nav.Link>
+                <Nav.Link eventKey="link-2"><Icon name='chat' className='' />Obrolan</Nav.Link>
+                <Nav.Link eventKey="/berjualan"><Icon name='money' className='' />Mulai Berjualan</Nav.Link>
                 <Nav.Link eventKey="/keluar"><ModalKeluar/></Nav.Link>
                 </Nav>
                 </Col>
                 <Col xs={12} md={8}>
                 <Nav className='tab'justify defaultActiveKey="/home">
-                <Nav.Item>
+                    <Nav.Item>
                      <Nav.Link href="/BelumDibayar" >Belum Dibayar</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/Dikirim">Dikirim</Nav.Link>
+                    <Nav.Link eventKey="link-1">Dikirim</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/Selesai">Selesai</Nav.Link>
+                    <Nav.Link eventKey="link-2">Selesai</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/BeriUlasan">Beri Ulasan</Nav.Link>
+                    <Nav.Link eventKey="disabled">Beri Ulasan</Nav.Link>
                     </Nav.Item>
                 </Nav>
                 <div className='tab-div mt-3 '>

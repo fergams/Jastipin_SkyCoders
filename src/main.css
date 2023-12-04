@@ -286,13 +286,6 @@ header {
     box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
 }
 
-.footer {
-    background-image: url("../src/assets/img/footer.png");
-    width: 100%;
-    background-size: cover;
-    height: 380px;
-}
-
 .card {
     width: 190px;
     height: 150px;
