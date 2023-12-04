@@ -23,6 +23,7 @@ import Dikirim from "./pages/Dikirim";
 import Selesai from "./pages/Selesai";
 import BeriUlasan from "./pages/BeriUlasan";
 import StatusPesanan from "./pages/StatusPesanan";
+import RatingUlasan from "./pages/RatingUlasan";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/Selesai" Component={Selesai} />
         <Route path="/BeriUlasan" Component={BeriUlasan} />
         <Route path="/StatusPesanan" Component={StatusPesanan} />
+        <Route path="/RatingUlasan" Component={RatingUlasan} />
       </Routes>
 
 
