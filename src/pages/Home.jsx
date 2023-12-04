@@ -87,15 +87,12 @@ const Home = () => {
       <Row>
         {ProdukTerbaru.map((Produk) => {
           return <Col key={Produk.id} className='rounded'>
-            <img src={Produk.image} alt="unspalsh.com" className='mb-2 rounded shadow mt-3'/>
-            <h5 className='fw-bold'>Nama Produk</h5>
+            <img src={Produk.image} alt="unspalsh.com" className=' rounded shadow mt-3'/>
+            <h3 className='fw-bold'>Nama Produk</h3>
             <p>Produk ini adalah produk asli indonesia</p>
-            <Row>
-              <Col><FaCartPlus className='ikoncart fa-2xl'/>
-              </Col>
-              <Col >
-            <h5 className='fw-bold'>Rp 10.000</h5>
-              </Col>
+            <Row><Col>
+            <h3 className='fw-bold'><FaCartPlus className='ikoncart-p fa-xl me-2'/>Rp 10.000</h3>
+            </Col>
             </Row>
             
           </Col>

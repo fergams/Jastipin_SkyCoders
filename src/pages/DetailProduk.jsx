@@ -2,6 +2,7 @@ import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";  
 import NavbarComponentLogin from "../components/NavbarComponentLogin"; 
 import Item from "../components/Itemm" ;
+import Footer from '../components/Footer'
 
 const DetailProduk = () => {
   return (
@@ -16,6 +17,7 @@ const DetailProduk = () => {
     </Container>
     </header>
     <Item/>
+    <Footer/>
     </div>
   )
 }
