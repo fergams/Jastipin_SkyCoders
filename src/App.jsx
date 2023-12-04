@@ -20,6 +20,8 @@ import BelumDibayar from "./pages/BelumDibayar";
 import ModalKeluar from "./components/ModalKeluar";
 import Pembayaran from "./pages/Pembayaran";
 import Dikirim from "./pages/Dikirim";
+import Selesai from "./pages/Selesai";
+import BeriUlasan from "./pages/BeriUlasan";
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
         <Route path="/ModalKeluar" Component={ModalKeluar} />
         <Route path="/Pembayaran" Component={Pembayaran} />
         <Route path="/Dikirim" Component={Dikirim} />
+        <Route path="/Selesai" Component={Selesai} />
+        <Route path="/BeriUlasan" Component={BeriUlasan} />
       </Routes>
 
 
