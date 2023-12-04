@@ -608,3 +608,21 @@ float: left;
   .anu{
     text-align: right;
   }
+  .p-bayar{
+    text-align: right;
+  }
+  .p-rek{
+    text-align: left;
+    float: right;
+  }
+  .img-p{
+    float: left;
+  }
+  .aaa{
+    text-align: right;
+    padding-left: 270px;
+    color: #1b9bee;
+  }
+  .aaa-btn{
+    width: 120px;
+  }
