@@ -9,7 +9,7 @@ const Login = () => {
     
 <div className='login-logo w-100 min-vh-100 d-flex align-items-left rounded'>
 
-<div class="form-container">
+<div class="form-container ">
 {<img src={user} width="120" height="120" alt="Profle" className="position-relative  start-50 translate-middle m-2 heihgt-20 mt-5" />}     
 <form class="form">
 <input type="email" class="inputl" placeholder="Email"/>

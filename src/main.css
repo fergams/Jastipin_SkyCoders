@@ -63,6 +63,7 @@
     width: var(--size);
     height: var(--size);
     border-radius: 50%;
+    margin-bottom: 4px;
    }
    
 
@@ -71,6 +72,8 @@
     width: 30px;
     display: block;
     margin-right: 50px;
+    margin-left: 20px;
+    margin-bottom: 5px;
 }
 /* this is a recreation of kolom cari search in css */
 .form {
@@ -79,12 +82,13 @@
     --focus-input-bg-color: transparent;
     --text-color: #949faa;
     --active-color: #1b9bee;
-    --width-of-input: 700px;
+    --width-of-input: 100px;
     --inline-padding-of-input: 1.2em;
     --gap: 0.9rem;
   }
   /* form style */
   .form {
+    margin-left: 100px;
     font-size: 0.9rem;
     display: flex;
     align-items: center;
@@ -107,7 +111,7 @@
   }
   /* label styling */
   label {
-    width: 100%;
+    width: 500px;
     padding: 0.8em;
     height: 40px;
     padding-inline: var(--inline-padding-of-input);
@@ -197,7 +201,7 @@ header {
   height: 350px;
 }
 .drop {
-  background-color: #ececec;
+  background-color: #ffffff;
   margin-left: 490px;
 }
 .homepage .header-box h3 {
@@ -247,7 +251,7 @@ header {
 
 /* style homepage produk */
 .homepage .produk{
-    background-color: #ececec;
+    background-color: #ffffff;
     padding-bottom: 100px;
 }
 .homepage .produk .row:nth-child(1){
@@ -406,10 +410,12 @@ header {
     outline: 0 !important;
     box-sizing: border-box;
     padding: 12px 15px;
+    margin-right: 200px;
   }
   
   .form-btn {
     padding: 10px 15px;
+    margin-right: 200px;
     border-radius: 10px;
     width: 450px;
     border: 0 !important;
@@ -543,9 +549,11 @@ header {
     height: 4rem;
     margin-top: 30px;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight:bolder;
     line-height: 4rem;
+    gap: 30px;
+    color: #000;
   }
   .text-detail{
     padding-top: 25px;
@@ -555,4 +563,48 @@ header {
   }
   .sk{
     text-align: center;
+  }
+
+  .foto-avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+float: left;
+  }
+  .foto-h3 {
+    line-height: 50px;
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 95px;
+    font-weight: bolder;
+  }
+  .foto-a {
+    padding-left: 20px;
+    display: flex;
+  }
+
+  .tab{
+    background-color: #D7E3F6;
+    height: 3rem;
+    border-radius: 10px;
+    line-height: 2rem;
+  }
+  .tab:hover{
+    color: #000;
+  }
+  .tab-div{
+    background-color: #D7E3F6;
+    height: 20rem;
+    border-radius: 10px;
+    line-height: 2rem;
+  }
+  .tab-toko{
+    padding-left: 30px;
+  }
+  .float-right {
+    padding-left: 300px;
+    padding-top: 50px;
+  }
+  .anu{
+    text-align: right;
   }

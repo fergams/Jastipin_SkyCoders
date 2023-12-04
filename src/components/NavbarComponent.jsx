@@ -64,7 +64,7 @@ const NavbarComponent = () => {
           </Nav>
             <FaCartPlus className="ikoncart fa-2xl" onClick={() => navigate("/Keranjang")}/>
           <div>
-            <button className="btn btn-primary rounded-1 m-5 " onClick={() => navigate("/Login")}>Masuk</button>
+            <button className="btn btn-primary rounded-1  " onClick={() => navigate("/Login")}>Masuk</button>
           </div>
         </Navbar.Collapse>
       </Container>

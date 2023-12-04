@@ -16,6 +16,8 @@ import KatalogKosmetik from "./pages/KatalogKosmetik";
 import DetailProduk from "./pages/DetailProduk";
 import KebijakanPrivasi from "./pages/KebijakanPrivasi";
 import SyaratKetentuan from "./pages/SyaratKetentuan";
+import BelumDibayar from "./pages/BelumDibayar";
+import ModalKeluar from "./components/ModalKeluar";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
         <Route path="/DetailProduk" Component={DetailProduk} />
         <Route path="/KebijakanPrivasi" Component={KebijakanPrivasi} />
         <Route path="/SyaratKetentuan" Component={SyaratKetentuan} />
+        <Route path="/BelumDibayar" Component={BelumDibayar} />
+        <Route path="/ModalKeluar" Component={ModalKeluar} />
       </Routes>
 
 

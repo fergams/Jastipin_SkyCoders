@@ -16,6 +16,7 @@ const Itemm = () => (
         <p>
         <Rating maxRating={5} disabled /> 0.0  | <b>21</b> ulasan produk</p>
             <h2 className='fw-bold'>Rp 100.000</h2>
+            
         <h4>Variant <Button.Group className='varian' buttons={['Variant1', 'Variant2', 'Variant3']} /></h4>
         <h4>Kuantitas
           <button className='quantity margin-left-3rem'>-</button>

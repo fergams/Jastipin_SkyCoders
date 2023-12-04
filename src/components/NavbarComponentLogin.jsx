@@ -26,11 +26,11 @@ const NavbarComponentLogin = () => {
         <img className="imggg"
              src="./public/logo.jpg"
              alt="image"/>
-        <Navbar.Brand href="#home" className="fs-3 fw-bold">Jastip.in</Navbar.Brand>
+        <Navbar.Brand href="/" className="fs-3 fw-bold">Jastip.in</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
 
-          <Nav className="mx-auto mt-3">
+          <Nav className=" mt-3">
 <form class="form ">
     <label for="search">
         <input class="input" type="text" required="" placeholder="Cari Produk atau barang" id="search"/>

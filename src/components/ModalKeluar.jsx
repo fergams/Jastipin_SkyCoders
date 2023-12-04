@@ -1,47 +1,32 @@
-import React from 'react'
-import { Button, Modal } from 'semantic-ui-react'
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import {Icon} from 'semantic-ui-react';
 
-function exampleReducer(state, action) {
-    switch (action.type) {
-      case 'OPEN_MODAL':
-        return { open: true, dimmer: action.dimmer }
-      case 'CLOSE_MODAL':
-        return { open: false }
-      default:
-        throw new Error()
-    }
-  }
-const ModalKeluar = () => {
-    const [state, dispatch] = React.useReducer(exampleReducer, {
-        open: false,
-        dimmer: undefined,
-      })
-      const { open, dimmer } = state
+function ModalKeluar() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
-      <Button
-        onClick={() => dispatch({ type: 'OPEN_MODAL', dimmer: 'blurring' })}
-      >
-        Blurring
-      </Button>
+      <p onClick={handleShow}><Icon name='x' className='' />
+        Keluar
+      </p>
 
-      <Modal
-        dimmer={dimmer}
-        open={open}
-        onClose={() => dispatch({ type: 'CLOSE_MODAL' })}
-      >
-        <Modal.Header></Modal.Header>
-        <Modal.Content>
-          Yakin ingin Keluar?
-        </Modal.Content>
-        <Modal.Actions>
-          <Button negative onClick={() => dispatch({ type: 'CLOSE_MODAL' })}>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Keluar</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Yakin ingin Keluar?</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
             Tidak
           </Button>
-          <Button positive onClick={() => dispatch({ type: 'CLOSE_MODAL' })}>
-            Ya
+          <Button variant="primary" onClick={handleClose}>
+            Iya
           </Button>
-        </Modal.Actions>
+        </Modal.Footer>
       </Modal>
     </div>
   )
