@@ -1,8 +1,7 @@
 import React from 'react'
 import {Container, Row, Col} from "react-bootstrap";  
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
-import {ProdukTerbaru} from "../data/index";
-import {FaCartPlus} from "react-icons/fa"      
+import Card from '../components/Card'      
 
 const Itemm = () => (
   
@@ -11,7 +10,7 @@ const Itemm = () => (
       <Col>
       <Item.Group divided className='mt-5'>
     <Item>
-      <Item.Image src='./src/assets/img/Produk/Produk-2.jpg' size='large mt-5' className='rounded-20' />
+      <Item.Image src='./src/assets/img/Produk/im.png' size='large mt-5' className='rounded-20' />
 
       <Item.Content className='mt-5'>
         <h1 className='detailproduk fw-bold'>Nama Produk</h1>
@@ -83,18 +82,15 @@ Terdapat 4 varian rasa: <br />- Creamy Chocolate<br />- Creamy Cheese<br />- Swe
       <hr />
       <h2 className='fw-bold'>Anda Mungkin Juga Suka</h2>
       <Row>
-        {ProdukTerbaru.map((Produk) => {
-          return <Col key={Produk.id} className='rounded mt-3'>
-          <img src={Produk.image} alt="unspalsh.com" className=' rounded shadow mt-3'/>
-          <h3 className='fw-bold'>Nama Produk</h3>
-          <p>Produk ini adalah produk asli indonesia</p>
-          <Row><Col>
-          <h3 className='fw-bold'><FaCartPlus className='ikoncart-p fa-xl me-2'/>Rp 10.000</h3>
-          </Col>
-          </Row>
-          
+        <Col>
+        <Card/>
         </Col>
-        })}
+        <Col>
+        <Card/>
+        </Col>
+        <Col>
+        <Card/>
+        </Col>
       </Row>
   </Item.Group>
       </Col>
