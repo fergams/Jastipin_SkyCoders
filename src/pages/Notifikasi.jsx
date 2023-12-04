@@ -20,28 +20,50 @@ const Notifikasi = () => {
       <Row>
         <Col className='judul rounded'> <Icon name='arrow circle left' className='' />Notifikasi</Col>
       </Row>
+      <Row className='mt-5'>
+        <Col>
+        <div>
+    <img class="avatar" src="../src/assets/img/Testimonial/people-1.jpg"/>
+      <a class="fw-bold ms-3">Daniel Louise</a>
+      </div>
+        </Col>
+        <Col>
+        <p className='p-notif mt-2 mb-3'>Barang Jastip sedang di perjalanan</p>
+        </Col>
+        <Col>
+        <p className='p-notif mt-2 mb-3'>hari ini 11:42</p>
+        </Col>
+      </Row>
+      <hr />
       <Row>
-      <div class="ui middle aligned divided list">
-  <div class="item">
-    <img class="ui avatar image" src="/images/avatar/small/daniel.jpg"/>
-    <div class="content">
-      <a class="header">Daniel Louise</a>
-    </div>
-  </div>
-  
-  <div class="item">
-    <img class="ui avatar image" src="/images/avatar/small/stevie.jpg"/>
-    <div class="content">
-      <a class="header">Stevie Feliciano</a>
-    </div>
-  </div>
-  <div class="item">
-    <img class="ui avatar image" src="/images/avatar/small/elliot.jpg"/>
-    <div class="content">
-      <a class="header">Elliot Fu</a>
-    </div>
-  </div>
-</div></Row>
+        <Col>
+      <div>
+    <img class="avatar" src="../src/assets/img/Testimonial/people-1.jpg"/>
+      <a class="fw-bold ms-3">Daniel Louise</a>
+      </div>
+        </Col>
+        <Col>
+        <p className='p-notif mt-2 mb-3'>Barang Sudah diterima</p>
+        </Col>
+        <Col>
+        <p className='p-notif mt-2 mb-3'>kemarin 19.30</p>
+        </Col>
+      </Row>
+      <hr />
+      <Row>
+        <Col>
+      <div>
+    <img class="avatar" src="../src/assets/img/Testimonial/people-1.jpg"/>
+      <a class="fw-bold ms-3">Daniel Louise</a>
+      </div>
+        </Col>
+        <Col>
+        <p className='p-notif mt-2 mb-3'>Barang Sudah diterima</p>
+        </Col>
+        <Col>
+        <p className='p-notif mt-2 mb-3'>kemarin 19.30</p>
+        </Col>
+      </Row>
     </Container>
     
     <Footer className="text-detail"/>
