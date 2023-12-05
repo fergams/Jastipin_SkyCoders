@@ -1,0 +1,34 @@
+.Container-fluid {
+    position: relative;
+    top: 21vh;
+}
+
+.teks-prof {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.teks-prof p {
+    margin-bottom: 0;
+}
+
+.teks-prof p:nth-child(1) {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.list1 {
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+}
+
+.list12 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.list p {
+    font-size: 20px;
+    margin-left: 30px;
+}

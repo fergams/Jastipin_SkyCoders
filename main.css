@@ -1,0 +1,706 @@
+* {
+    font-family: "Poppins";
+}
+
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;
+  }
+
+/*STYLE NAVBAR*/
+.navbar {
+    position: fixed;
+    padding: 0px 0px;
+    width: 90%;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: white;
+    transition: all 0.2s ease;
+    left: 5%;
+    top: 5%;
+    height: 10%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.navbar.color-active {
+    background-color: var(--navbar-color);
+    padding: 0;
+    border-bottom: 2px solid #00000098;
+}
+.navbar .nav-link a {
+    padding: 5px 10px 5px 5px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar .nav-link a:hover {
+    color: black;
+}
+
+/* .navbar .nav-link .active {
+    background-color: #3297f7;
+    border-radius: 9px;
+    color: var(--primary-color);
+} */
+
+.navbar .nav-link .active:hover {
+    color: black;
+}
+
+.imggg {
+    size: 0cm;
+    max-width: 5%;
+}
+.avatar {
+    --size: 40px;
+    background-size: cover;
+    background-image: url("../src/assets/img/Testimonial/people-1.jpg");
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    margin-bottom: 4px;
+   }
+   
+
+.ikoncart {
+    size: 5em;
+    width: 30px;
+    display: block;
+    margin-right: 50px;
+    margin-bottom: 5px;
+}
+.ikoncart-p {
+  size: 5em;
+  width: 30px;
+  float: left;
+}
+/* this is a recreation of kolom cari search in css */
+.form {
+    --input-text-color: #fff;
+    --input-bg-color: #ffffff;
+    --focus-input-bg-color: transparent;
+    --text-color: #949faa;
+    --active-color: #1b9bee;
+    --width-of-input: 100px;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+  }
+  /* form style */
+  .form {
+    margin-left: 100px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    isolation: isolate;
+
+  }
+  /* a fancy bg for showing background and border when focus. */
+  .fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 30px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  /* label styling */
+  label {
+    width: 500px;
+    padding: 0.8em;
+    height: 40px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+  }
+  
+  .search,.close-btn {
+    position: absolute;
+  }
+  /* styling search-icon */
+  .search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+  }
+  /* svg -- size */
+  svg {
+    width: 17px;
+    display: block;
+  }
+  /* styling of close button */
+  .close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* styling of input */
+  .input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: var(--text-color)
+  }
+  /* input background change in focus */
+  .input:focus ~ .fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+  }
+  /* search icon color change in focus */
+  .input:focus ~ .search {
+    fill: var(--active-color);
+  }
+  /* showing close button when typing */
+  .input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+  }
+
+/*STYLE HEADER */
+header {
+  background-size: cover;
+    background-image:url("../src/assets/img/landing.png");/* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to left, #4096f8, #6bb2f5, #4f43f1); 
+  background: linear-gradient(to left, #6b7ff3, #549ae9, #6f65fd);  */
+}
+
+
+.hkat {
+  height: 350px;
+}
+.drop {
+  background-color: #ffffff;
+  margin-left: 490px;
+}
+.homepage .header-box h3 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.homepage .header-box h5 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+.homepage .header-box h6 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.homepage .header-box img {
+    width: 100%;
+}
+.homepage .btn-menu {
+    align-self: center;
+    height: 40px;
+    width: 120px;
+    padding: 0px;
+    text-align: center;
+    border: 0;
+    background-color: #D5B793;
+    color: var(--navbar-color);
+    font-size: 25px;
+    border-radius: 10px;}
+.homepage .unggulan {
+    background-color: #fff;
+    padding: 0px 0px;
+    width: 90%;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    left: 5%;
+    top: 5%;
+    height: 10%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: #000000;
+}
+
+/* style homepage produk */
+.homepage .produk{
+    background-color: #ffffff;
+    padding-bottom: 100px;
+}
+.homepage .produk .row:nth-child(1){
+    padding-top: 50px;
+}
+.homepage .produk .row:nth-child(3) h3,
+.homepage .produk .row:nth-child(3) p {
+    color: var(--color-text);
+    font-size: 1.2rem;
+}
+.homepage .produk .row:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0rem 3rem 6rem 3rem;
+    box-sizing: content-box;
+    gap: 15px;
+}
+.homepage .produk .row:nth-child(3) img {
+    width: 100%;
+    height: 200px;
+}
+
+.fitur {
+    background-image: url("../src/assets/img/unggulan.png");
+    height: 100px;
+    background-size: cover;
+    
+    box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
+}
+
+.card {
+    width: 190px;
+    height: 150px;
+    transition: box-shadow .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 70px;
+    display: grid;
+    background-color: #ececec;
+    background-size: cover;
+    background-image: url("../src/assets/img/Produk/Produk-1.jpg");
+  }
+  
+  .card-img {
+    width: 100%;
+    height: 190px;
+  }
+  
+  .card-info {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-icon {
+    opacity: 0;
+    transform: translateX(-90%);
+    width: 2em;
+    height: 2.5em;
+    transition: all .3s ease-in-out;
+    color: #ececec;
+  }
+  
+  .icon {
+    --size: 20px;
+    width: var(--size);
+    height: var(--size);
+  }
+  
+  /*Text*/
+  .card-text p {
+    line-height: 120%;
+   /*Delete this line for multi-line text*/
+    white-space: nowrap;
+    color: #ececec;
+  }
+  
+  .text-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .text-subtitle {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  /*Hover*/
+  .card:hover {
+    box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
+  }
+  
+  .card:hover .card-icon {
+    opacity: 1;
+    transform: translateX(20%);
+    color: #ffffff;
+  }
+  
+  .login-logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../src/assets/img/logologin.png);
+  }
+  .form-container {
+    align-items: center;
+    width: 500px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    margin-top: 25px;
+    margin-left: 700px;
+  }
+  
+  .title {
+    text-align: center;
+    
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .sub-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 9px;
+  }
+  
+  .form {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .inputl {
+    border-radius: 10px;
+    width: 450px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    margin-right: 200px;
+  }
+  
+  .form-btn {
+    padding: 10px 15px;
+    margin-right: 200px;
+    border-radius: 10px;
+    width: 450px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: rgb(24, 105, 255);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+.Tombol-Simpan {
+  padding: 10px 15px;
+  margin-right: 200px;
+  border-radius: 10px;
+  width: 150px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: rgb(24, 105, 255);
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+  .form-btn-overlay {
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 450px;
+    border: 2px solid rgb(24, 105, 255);
+    background: rgb(255, 255, 255);
+    color: rgb(24, 105, 255);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .form-btn:active {
+    box-shadow: none;
+  }
+  
+  .sign-up-label {
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .sign-up-link {
+    margin-left: 1px;
+    font-size: 11px;
+    text-decoration: underline;
+    text-decoration-color: teal;
+    color: teal;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .apple-login-button,
+      .google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  .apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .google-login-button {
+    border: 2px solid #747474;
+  }
+  
+  .apple-icon,
+      .google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+
+  /*katalog*/
+  .listmakanan {
+    display: grid;
+    height: 280px;
+    margin-left: 500x;
+    box-sizing: content-box;
+  }
+
+  .detailproduk {
+    font-size: 3rem;
+  }
+
+  .varian {
+    margin-left: 100px;
+    padding-left: 5rem;
+  }
+
+.quantity {
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 4.2rem;
+  }
+  .quantity-r {
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+.quantity-label {
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .judul{
+    background-color: #D7E3F6;
+    height: 4rem;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight:bolder;
+    line-height: 4rem;
+    gap: 30px;
+    color: #000;
+  }
+  .text-detail{
+    padding-top: 25px;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .sk{
+    text-align: center;
+  }
+
+  .foto-avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+float: left;
+  }
+  .foto-h3 {
+    line-height: 50px;
+    text-align: left;
+    margin-left: 30px;
+    padding-left: 95px;
+    font-weight: bolder;
+  }
+  .foto-a {
+    padding-left: 20px;
+    display: flex;
+  }
+
+  .tab{
+    background-color: #D7E3F6;
+    height: 3rem;
+    border-radius: 10px;
+    line-height: 2rem;
+  }
+  .tab:hover{
+    color: #000;
+  }
+  .tab-div{
+    background-color: #D7E3F6;
+    height: 20rem;
+    border-radius: 10px;
+    line-height: 2rem;
+  }
+  .tab-div-rating{
+    background-color: #D7E3F6;
+    height: 35rem;
+    border-radius: 10px;
+    line-height: 2rem;
+  }
+  .btn-rating{
+    margin-top: 900px;
+  }
+  .tab-div-status{
+    height: 20rem;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding-top: 100px;
+    margin-left: 290px;
+  }
+  .tab-toko{
+    padding-left: 30px;
+  }
+  .float-right {
+    padding-left: 300px;
+    padding-top: 50px;
+  }
+  .anu{
+    text-align: right;
+  }
+  .p-bayar{
+    text-align: right;
+  }
+  .p-rek{
+    text-align: left;
+    float: right;
+  }
+  .img-p{
+    float: left;
+  }
+  .aaa{
+    text-align: right;
+    padding-left: 270px;
+    color: #1b9bee;
+  }
+  .aaa-btn{
+    width: 120px;
+  }
+  .p-notif{
+    text-align: center;
+  }
+
+  .star-ratin{
+    float: right;
+
+  }
+
+  .custum-file-upload {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cacaca;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: rgba(75, 85, 99, 1);
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  }
