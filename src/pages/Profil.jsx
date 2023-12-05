@@ -71,7 +71,7 @@ let navigate = useNavigate();
                     <input type="Nama" class="inputl" placeholder="Batam"/>
                     <p style={{marginBottom:'10px',marginTop:'10px', fontWeight:'bold'}}>NO. TELP</p>
                     <input type="Nama" class="inputl" placeholder="+(62) 895-3781-5672"/>
-                    <button class="Tombol-Simpan" onClick={() => navigate("/")}>Simpan</button>
+                    <button class="Tombol-Simpan" onClick={() => navigate("")}>Simpan</button>
                     
                 </form>
             </form>
