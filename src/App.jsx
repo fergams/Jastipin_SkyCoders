@@ -26,6 +26,7 @@ import StatusPesanan from "./pages/StatusPesanan";
 import RatingUlasan from "./pages/RatingUlasan";
 import TentangKami from "./pages/TentangKami";
 import Faq from "./pages/Faq";
+import Profil from './pages/Profil';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
         <Route path="/RatingUlasan" Component={RatingUlasan} />
         <Route path="/TentangKami" Component={TentangKami} />
         <Route path="/Faq" Component={Faq} />
+        <Route path="/Profil" Component={Profil} />
       </Routes>
 
 
