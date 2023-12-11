@@ -28,6 +28,8 @@ import TentangKami from "./pages/TentangKami";
 import Faq from "./pages/Faq";
 import Profil from './pages/Profil';
 import UlasanProduk from './pages/UlasanProduk';
+import Checkout from "./pages/Checkout";
+import Keranjang from "./pages/Keranjang"
 
 function App() {
   return (
@@ -60,6 +62,8 @@ function App() {
         <Route path="/Faq" Component={Faq} />
         <Route path="/Profil" Component={Profil} />
         <Route path="/UlasanProduk" Component={UlasanProduk} />
+        <Route path="/Checkout" Component={Checkout}/>
+        <Route path="/Keranjang" Component={Keranjang}/>
         
       </Routes>
 

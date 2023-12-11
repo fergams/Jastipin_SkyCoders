@@ -1,0 +1,10 @@
+.cardd {
+    width: 90%;
+    display: flex;
+    background-image: none !important;
+    background-color: #D7E3F6 !important;
+    height: 6rem !important;
+    border: none;
+    padding-left: 59px;
+    padding-right: 50px;
+}

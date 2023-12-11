@@ -1,0 +1,58 @@
+.KeranjangPages {
+    height: 1000px;
+}
+
+.check {
+    background-color: rgba(215, 227, 246, 1);
+    border-Radius: 10px;
+    height: 4rem;
+    position: relative;
+    top: 170px;
+    display: flex;
+    align-items: center;
+}
+
+.perjudul {
+    background-color: rgba(215, 227, 246, 1);
+    border-Radius: 10px;
+    height: 4rem;
+    position: relative;
+    top: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.isinya {
+    background-color: rgba(215, 227, 246, 1);
+    border-Radius: 10px;
+    height: 25rem;
+    position: relative;
+    top: 210px;
+    align-items: center;
+}
+
+.CheckSec {
+    background-color: rgba(215, 227, 246, 1);
+    border-Radius: 10px;
+    height: 4rem;
+    position: relative;
+    top: 230px;
+    align-items: center;
+    justify-content: center;
+}
+
+.onediv{
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.left-section {
+    display: flex;
+    padding-left: 70px;
+}
+
+.right-section {
+    display: flex;
+    padding-left: 90px;
+}
