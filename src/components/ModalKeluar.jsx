@@ -2,8 +2,10 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import {Icon} from 'semantic-ui-react';
+import { useNavigate } from "react-router-dom";
 
 function ModalKeluar() {
+  let navigate = useNavigate();
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -23,7 +25,7 @@ function ModalKeluar() {
           <Button variant="secondary" onClick={handleClose}>
             Tidak
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={() => navigate("/")}>
             Iya
           </Button>
         </Modal.Footer>
