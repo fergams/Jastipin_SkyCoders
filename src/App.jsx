@@ -24,6 +24,10 @@ import Selesai from "./pages/Selesai";
 import BeriUlasan from "./pages/BeriUlasan";
 import StatusPesanan from "./pages/StatusPesanan";
 import RatingUlasan from "./pages/RatingUlasan";
+import TentangKami from "./pages/TentangKami";
+import Faq from "./pages/Faq";
+import Profil from './pages/Profil';
+import UlasanProduk from './pages/UlasanProduk';
 
 function App() {
   return (
@@ -52,6 +56,11 @@ function App() {
         <Route path="/BeriUlasan" Component={BeriUlasan} />
         <Route path="/StatusPesanan" Component={StatusPesanan} />
         <Route path="/RatingUlasan" Component={RatingUlasan} />
+        <Route path="/TentangKami" Component={TentangKami} />
+        <Route path="/Faq" Component={Faq} />
+        <Route path="/Profil" Component={Profil} />
+        <Route path="/UlasanProduk" Component={UlasanProduk} />
+        
       </Routes>
 
 

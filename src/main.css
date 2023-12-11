@@ -286,13 +286,6 @@ header {
     box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
 }
 
-.footer {
-    background-image: url("../src/assets/img/footer.png");
-    width: 100%;
-    background-size: cover;
-    height: 380px;
-}
-
 .card {
     width: 190px;
     height: 150px;
@@ -430,6 +423,20 @@ header {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 
+.Tombol-Simpan {
+  padding: 10px 15px;
+  margin-right: 200px;
+  border-radius: 10px;
+  width: 150px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: rgb(24, 105, 255);
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
   .form-btn-overlay {
     padding: 10px 15px;
     border-radius: 10px;
