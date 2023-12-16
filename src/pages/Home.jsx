@@ -90,7 +90,7 @@ const Home = () => {
             </div>
           </Row>
           <Row>
-            <h1 className="text-left fw-bold">Kategori Produk</h1>
+            <h1 className="text-left fw-bold">Rekomendasi Produk</h1>
           </Row>
           <Row>
             {ProdukTerbaru.map((Produk) => {
