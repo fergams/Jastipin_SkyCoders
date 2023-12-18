@@ -34,8 +34,7 @@ const Home = () => {
           <Row>
             <h1 className="text-left fw-bold">Kategori Produk</h1>
             <div class="card mt-4 mb-5 ">
-              <img src="../img/Kategori/KategoriMakanan.jpg" width={200} height={200} />
-              <div class="card-img" onClick={() => navigate("/KatalogMakanan")}></div>
+              <img src="../img/Kategori/KategoriMakanan.jpg" width={200} height={200} onClick={() => navigate("/KatalogMakanan")} />
               <div class="card-info">
                 <div class="card-text">
                   <p class="text-title">Makanan</p>
@@ -49,8 +48,7 @@ const Home = () => {
             </div>
 
             <div class="card mt-4 mb-5 ">
-              <img src="../img/Kategori/Elektronik.jpg" width={200} height={200} />
-              <div class="card-img"></div>
+              <img src="../img/Kategori/Elektronik.jpg" width={200} height={200} onClick={() => navigate("/KatalogElektronik")} />
               <div class="card-info">
                 <div class="card-text">
                   <p class="text-title">Elektronik</p>
@@ -64,8 +62,7 @@ const Home = () => {
             </div>
 
             <div class="card mt-4 mb-5 ">
-              <img src="../img/Kategori/Pakaian.jpg" width={200} height={200} />
-              <div class="card-img"></div>
+              <img src="../img/Kategori/Pakaian.jpg" width={200} height={200} onClick={() => navigate("/KatalogPakaian")} />
               <div class="card-info">
                 <div class="card-text">
                   <p class="text-title">Pakaian</p>
@@ -79,8 +76,7 @@ const Home = () => {
             </div>
 
             <div class="card mt-4 mb-5 ">
-              <img src="../img/Kategori/Kosmetik.jpg" width={200} height={200} />
-              <div class="card-img"></div>
+              <img src="../img/Kategori/Kosmetik.jpg" width={200} height={200} onClick={() => navigate("/KatalogKosmetik")} />
               <div class="card-info">
                 <div class="card-text">
                   <p class="text-title">Kosmetik</p>

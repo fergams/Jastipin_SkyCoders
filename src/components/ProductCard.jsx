@@ -31,7 +31,7 @@ const ProductCard = () => {
       </Col>
       <Col md={2}>
         {/* Gambar Produk */}
-        <Card.Img style={{height:"100px", width:"100px"}} variant="top" src={produk} alt="Gambar Produk" />
+        <Card.Img style={{ height: "100px", width: "100px" }} variant="top" src={produk} alt="Gambar Produk" />
       </Col>
       <Col md={3}>
         {/* Judul dan Variant Produk */}

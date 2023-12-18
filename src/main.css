@@ -299,11 +299,6 @@ header {
   background-size: cover;
 }
 
-.card-img {
-  width: 200%;
-  height: 190px;
-}
-
 .card-info {
   position: absolute;
   width: 100%;
