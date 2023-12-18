@@ -34,6 +34,7 @@ const HomeLogin = () => {
           <Row>
             <h1 className="text-left fw-bold">Kategori Produk</h1>
             <div class="card mt-4 mb-5 ">
+              <img src="../img/Kategori/KategoriMakanan.jpg" width={200} height={200} />
               <div class="card-img" onClick={() => navigate("/KatalogMakanan")}></div>
               <div class="card-info">
                 <div class="card-text">
@@ -48,6 +49,7 @@ const HomeLogin = () => {
             </div>
 
             <div class="card mt-4 mb-5 ">
+              <img src="../img/Kategori/Elektronik.jpg" width={200} height={200} />
               <div class="card-img"></div>
               <div class="card-info">
                 <div class="card-text">
@@ -62,6 +64,7 @@ const HomeLogin = () => {
             </div>
 
             <div class="card mt-4 mb-5 ">
+              <img src="../img/Kategori/Pakaian.jpg" width={200} height={200} />
               <div class="card-img"></div>
               <div class="card-info">
                 <div class="card-text">
@@ -76,6 +79,7 @@ const HomeLogin = () => {
             </div>
 
             <div class="card mt-4 mb-5 ">
+              <img src="../img/Kategori/Kosmetik.jpg" width={200} height={200} />
               <div class="card-img"></div>
               <div class="card-info">
                 <div class="card-text">

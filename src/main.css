@@ -59,7 +59,7 @@
 .avatar {
   --size: 40px;
   background-size: cover;
-  background-image: url("../src/assets/img/Testimonial/people-1.jpg");
+  background-image: url("../img/testimonial/people-2.jpg");
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
@@ -286,20 +286,21 @@ header {
 }
 
 .card {
-  width: 190px;
+  width: 200px;
   height: 150px;
   transition: box-shadow 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   overflow: hidden;
   cursor: pointer;
   margin-left: 70px;
+
   display: grid;
+  padding: 0rem;
   background-color: #ececec;
   background-size: cover;
-  background-image: url("../img/Kategori/KategoriMakanan.jpg");
 }
 
 .card-img {
-  width: 100%;
+  width: 200%;
   height: 190px;
 }
 
