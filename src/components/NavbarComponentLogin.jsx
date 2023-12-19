@@ -45,15 +45,8 @@ const NavbarComponentLogin = () => {
                 </div>
               </label>
             </form>
-            {navLinks.map((link) => {
-              return (
-                <div className="nav-link mt-1.6" key={link.id}>
-                  <NavLink to={link.path} className={({ isActive, isPending }) => (isPending ? "pending" : isActive ? "active" : "")} end>
-                    {link.text}
-                  </NavLink>
-                </div>
-              );
-            })}
+                <div className="mt-2 ms-4 me-3" onClick={() => navigate("/HomeLogin")}>Beranda</div>
+                <div className="mt-2 ms-3 me-4"onClick={() => navigate("/Notifikasi")}>Notifikasi</div>
           </Nav>
           <div>
             <FaCartPlus className="ikoncart fa-2xl" onClick={() => navigate("/Keranjang")} style={{ cursor: "pointer" }} />
