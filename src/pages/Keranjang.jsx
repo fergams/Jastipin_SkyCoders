@@ -6,8 +6,10 @@ import Form from "react-bootstrap/Form";
 import { IoIosChatbubbles } from "react-icons/io";
 import ProductCard from "../components/ProductCard";
 import "../Style/Keranjang.css";
+import { useNavigate } from "react-router-dom";   
 
 const Keranjang = () => {
+  let navigate = useNavigate();
   return (
     <div className="KeranjangPages">
       <NavbarComponentLogin />
@@ -69,8 +71,8 @@ const Keranjang = () => {
                     <p>RP 000.000</p>
 
                     {/* 6. Button Primary Bertuliskan "Checkout" */}
-                    <div className="buttoncheck">
-                    <Button variant="primary">Checkout</Button>
+                    <div className="buttoncheck" > 
+                    <Button variant="primary" onClick={() => navigate("/Checkout")}style={{ cursor: "pointer" }}>Checkout</Button>
                     </div>
 
                   </Col>

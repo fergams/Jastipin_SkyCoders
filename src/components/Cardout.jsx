@@ -14,9 +14,9 @@ const Cardout = () => {
           </Col>
           <Col md={8} className=''>
             {/* Nama Barang */}
-            <Card.Title className="nama-barang" style={{fontSize:"18px"}} >Nama Barang</Card.Title>
+            <Card.Title className="nama-barang" style={{fontSize:"18px"}} >Croissant Arah Saudi</Card.Title>
             {/* Variant Barang */}
-            <Card.Subtitle className="mb-2 text-muted font-weight-bold">Variant Barang</Card.Subtitle>
+            <Card.Subtitle className="mb-2 text-muted font-weight-bold">Creamy Chocolate</Card.Subtitle>
             {/* Harga Barang */}
             <Card.Text className="harga-barang" style={{fontSize:"18px"}} >Rp 100.000</Card.Text>
           </Col>

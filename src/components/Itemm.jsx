@@ -17,20 +17,20 @@ const Itemm = () => {
           <Item.Image src='./src/assets/img/Produk/Produk-4.jpg' size='large mt-5' className='rounded-20' />
 
           <Item.Content className='mt-5'>
-            <h1 className='detailproduk fw-bold'>Nama Produk</h1>
+            <h1 className='detailproduk fw-bold'>Croissant Arah Saudi</h1>
             <p  onClick={() => navigate("/UlasanProduk")} style={{cursor:'pointer'}}>
             <Rating maxRating={5} disabled /> 0.0  | <b>21</b> ulasan produk</p>
             <hr />
                 <h2 className='fw-bold'>Rp 100.000</h2>
                 
-            <h4>Variant <Button.Group className='varian' buttons={['Variant1', 'Variant2', 'Variant3']} /></h4>
+            <h4>Variant <Button.Group className='varian' buttons={['Creamy Chocolate', 'Red Velvet', 'Cheese Melt']} /></h4>
             <h4>Kuantitas
               <button className='quantity margin-left-3rem'>-</button>
               <input type="text" className='quantity-label' />
               <button className='quantity-r'>+</button>
             </h4>
             <Item.Extra> 
-            <button class="ui primary basic button">Tambahkan ke
+            <button class="ui primary basic button" onClick={() => navigate("/Keranjang")}style={{ cursor: "pointer" }}>Tambahkan ke
           <Icon name='cart' className='ms-2' /></button>
                 
               <Button primary floated='' className='ms-3'>

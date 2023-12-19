@@ -35,8 +35,8 @@ const ProductCard = () => {
       </Col>
       <Col md={3}>
         {/* Judul dan Variant Produk */}
-        <Card.Title>Judul Produk</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Variant Produk</Card.Subtitle>
+        <Card.Title>Croissant Arah Saudi</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Creamy Chocolate</Card.Subtitle>
       </Col>
       <Col md={2}>
         {/* Harga Awal */}

@@ -45,8 +45,8 @@ const NavbarComponentLogin = () => {
                 </div>
               </label>
             </form>
-                <div className="mt-2 ms-4 me-3" onClick={() => navigate("/HomeLogin")}>Beranda</div>
-                <div className="mt-2 ms-3 me-4"onClick={() => navigate("/Notifikasi")}>Notifikasi</div>
+                <div className="mt-2 ms-4 me-3" onClick={() => navigate("/HomeLogin")}style={{ cursor: "pointer" }}>Beranda</div>
+                <div className="mt-2 ms-3 me-4"onClick={() => navigate("/Notifikasi")} style={{ cursor: "pointer" }}>Notifikasi</div>
           </Nav>
           <div>
             <FaCartPlus className="ikoncart fa-2xl" onClick={() => navigate("/Keranjang")} style={{ cursor: "pointer" }} />
