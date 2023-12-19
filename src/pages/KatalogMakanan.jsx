@@ -166,7 +166,7 @@ const KatalogMakanan = () => {
            {ProdukTerbaru.slice(0, 1).map((Produk) => {
               return (
                 <Col key={Produk.id} className="rounded">
-                  <img src="../img/croissant.png"alt="unspalsh.com" className="katalog rounded shadow mt-3" />
+                  <img src="../img/croissant.png"alt="unspalsh.com" className="katalog rounded shadow mt-3"  onClick={() => navigate("/DetailProduk")} style={{cursor:'pointer'}}/>
                   <h3 className="fw-bold">Croissant Arab Saudi</h3>
                   <p style={{ fontSize: '0.8rem' }} >Croissant termasuk salah satu jenis flaky pastry yang memiliki tekstur berlapis-lapis. </p>
                   <Row>

@@ -1,7 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-
 import Home from "./pages/Home";
 import HomeLogin from "./pages/HomeLogin";
 import Notifikasi from "./pages/Notifikasi";
@@ -30,6 +28,7 @@ import Profil from './pages/Profil';
 import UlasanProduk from './pages/UlasanProduk';
 import Checkout from "./pages/Checkout";
 import Keranjang from "./pages/Keranjang"
+import Toko from "./pages/Toko";
 
 function App() {
   return (
@@ -64,6 +63,7 @@ function App() {
         <Route path="/UlasanProduk" Component={UlasanProduk} />
         <Route path="/Checkout" Component={Checkout}/>
         <Route path="/Keranjang" Component={Keranjang}/>
+        <Route path="/Toko" Component={Toko}/>
         
       </Routes>
 

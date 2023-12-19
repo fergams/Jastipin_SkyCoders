@@ -47,7 +47,7 @@ const Itemm = () => {
                         <img src="./img/toko.png"/>
                     </div>
                     <div class="content mt-4">
-                        <div class="header">Berkah.Jastip</div>
+                        <div class="header">berkah.jastip</div>
                     <div class="meta">
                         <span class="price"><Icon name='map marker' className='' />KOTA BATAM</span>
                     </div>
