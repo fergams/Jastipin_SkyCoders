@@ -37,8 +37,8 @@ let navigate = useNavigate();
         <div className="tentang">
           <p className='' onClick={() => navigate("/TentangKami")} style={{cursor:'pointer'}}>Tentang Kami</p>
           <p className='' onClick={() => navigate("/FAQ")} style={{cursor:'pointer'}}>FAQ</p>
-          <p className='' onClick={() => navigate("SyaratKetentuan")} style={{cursor:'pointer'}}>Syarat dan Ketentuan</p>
-          <p className='' onClick={() => navigate("KebijakanPrivasi")} style={{cursor:'pointer'}}>Kebijakan Privasi</p>
+          <p className='' onClick={() => navigate("/SyaratKetentuan")} style={{cursor:'pointer'}}>Syarat dan Ketentuan</p>
+          <p className='' onClick={() => navigate("/KebijakanPrivasi")} style={{cursor:'pointer'}}>Kebijakan Privasi</p>
         </div>
       </div>
 
