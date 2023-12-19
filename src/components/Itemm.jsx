@@ -54,9 +54,9 @@ const Itemm = () => {
                     <div class="description">
                     </div>
                     </div></div></div>
-                    <button class="ui primary basic button">Chat Sekarang
+                    <button class="ui primary basic button" onClick={() => navigate("/Obrolan")}style={{ cursor: "pointer" }}>Chat Sekarang
           <Icon name='chat' className='ms-2' /></button>
-          <button class="ui primary basic button ms-3">Kunjungi Toko
+          <button class="ui primary basic button ms-3" onClick={() => navigate("/Toko")}style={{ cursor: "pointer" }}>Kunjungi Toko
           <FontAwesomeIcon icon={faShop} className='ms-3'/></button>
           </Item.Content>
         </Item>
