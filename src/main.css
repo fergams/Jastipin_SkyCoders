@@ -59,7 +59,7 @@
 .avatar {
   --size: 40px;
   background-size: cover;
-  background-image: url("../img/testimonial/people-2.jpg");
+  background-image: url("../img/testimonial/people-1.jpg");
   width: var(--size);
   height: var(--size);
   border-radius: 50%;

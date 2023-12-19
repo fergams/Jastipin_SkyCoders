@@ -26,7 +26,7 @@ const BeriUlasan = () => {
                 <Col xs={6} md={4} className='mt-5'>
                 <div><img class="foto-avatar float-left" src="../src/assets/img/Testimonial/people-1.jpg"/>
                 </div><div>
-                     <h2 className='foto-h3'><b>Username</b></h2>
+                     <h2 className='foto-h3'><b>Angel Safitri</b></h2>
                      <a href="/Profil" className='foto-a'><Icon name='pencil' className='' />Ubah Profil</a>
                 </div>
                 </Col>
@@ -36,12 +36,12 @@ const BeriUlasan = () => {
             </Row>
             <Row>
             <Col xs={6} md={4} >
-                <Nav defaultActiveKey="/Dikirim" className="flex-column mt-5">
+                <Nav defaultActiveKey="/BeriUlasan" className="flex-column mt-5">
                 <Nav.Link href="/Profil"><Icon name='user' className='' />Profil Saya</Nav.Link>
-                <Nav.Link href="/Dikirim"><Icon name='cart' className='' />Pesanan</Nav.Link>
-                <Nav.Link href="/Profil"><Icon name='chat' className='' />Obrolan</Nav.Link>
+                <Nav.Link href="/BeriUlasan"><Icon name='cart' className='' />Pesanan</Nav.Link>
+                <Nav.Link href="/Obrolan"><Icon name='chat' className='' />Obrolan</Nav.Link>
                 <Nav.Link href="/berjualan"><Icon name='money' className='' />Mulai Berjualan</Nav.Link>
-                <Nav.Link href="/Keluar"><ModalKeluar/></Nav.Link>
+                <Nav.Link><ModalKeluar/></Nav.Link>
                 </Nav>
                 </Col>
                 <Col xs={12} md={8}>
