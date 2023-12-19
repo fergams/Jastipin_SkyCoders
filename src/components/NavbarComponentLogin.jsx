@@ -26,7 +26,7 @@ const NavbarComponentLogin = () => {
     <Navbar expand="lg" className={changeColor ? "color-active" : ""}>
       <Container>
         <img className="imggg" src="./public/logo.jpg" alt="image" />
-        <Navbar.Brand href="/" className="fs-3 fw-bold">
+        <Navbar.Brand href="/HomeLogin" className="fs-3 fw-bold">
           Jastip.in
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

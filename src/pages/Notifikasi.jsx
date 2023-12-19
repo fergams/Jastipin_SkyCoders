@@ -64,6 +64,7 @@ const Notifikasi = () => {
         <p className='p-notif mt-2 mb-3'>kemarin 19.30</p>
         </Col>
       </Row>
+      <hr />
     </Container>
     
     <Footer className="text-detail"/>
