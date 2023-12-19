@@ -1,6 +1,7 @@
 import React from "react";
 import "../Style/Obrolan.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
+import { Container, Row, Col, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavbarComponentLogin from "../components/NavbarComponentLogin";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -86,10 +87,10 @@ const Obrolan = () => {
                   <p style={{ marginLeft: "10px" }}> Maaf ya kak, lupa update data di katalog huhu..</p>
                 </Col>
               </div>
-              <Col className="kirim" style={{ backgroundColor: "#1b9bee", width: "855px", height: "40px", marginRight: "20px", marginTop: "307px", justifyContent: "center", borderRadius: "10px" }}>
+              <Col className="kirim" style={{ backgroundColor: "#1b9bee", width: "855px", height: "45px", marginRight: "20px", marginTop: "307px", justifyContent: "center", borderRadius: "10px" }}>
                 <div className=" col d-flex">
-                  <p style={{ fontSize: "10px", fontWeight: "lighter", paddingTop: "13px", paddingBottom: "5px", borderRadius: "10px", textAlign: "left", marginLeft: "10px" }}>Kirim Pesan...</p>
-                  <FontAwesomeIcon icon="fa-thin fa-paper-plane" className="mr-2" />
+                  <Form.Control as="textarea" rows={1} placeholder='Ketik Pesan.....'/>
+                  <p style={{ fontSize: "20px", fontWeight: "lighter", paddingTop: "13px", paddingBottom: "px", borderRadius: "10px", textAlign: "left", marginLeft: "10px" }}><Icon name='paper plane' className=' me-3' /></p>
                 </div>
               </Col>
             </Col>
