@@ -8,10 +8,12 @@ import Backcomp from "../components/Backcomp";
 import Cardout from "../components/Cardout.jsx";
 import ToggleButton from "../components/ToggleButton.jsx";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";   
 
 import "../Style/Checkout.css";
 
 const Checkout = () => {
+  let navigate = useNavigate();
   return (
     <div className="pages">
       <NavbarComponentLogin />
@@ -85,7 +87,7 @@ const Checkout = () => {
                 <p>RP 120.000</p>
               </div>
               <div>
-                <Button variant="primary">Buat Pesanan</Button>
+                <Button variant="primary" onClick={() => navigate("/Pembayaran")} style={{cursor:'pointer'}}>Buat Pesanan</Button>
               </div>
             </div>
           </div>

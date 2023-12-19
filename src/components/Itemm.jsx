@@ -17,13 +17,13 @@ const Itemm = () => {
           <Item.Image src='./src/assets/img/Produk/Produk-4.jpg' size='large mt-5' className='rounded-20' />
 
           <Item.Content className='mt-5'>
-            <h1 className='detailproduk fw-bold'>Croissant Arah Saudi</h1>
+            <h1 className='detailproduk fw-bold'>Croissant Arab Saudi</h1>
             <p  onClick={() => navigate("/UlasanProduk")} style={{cursor:'pointer'}}>
-            <Rating maxRating={5} disabled /> 0.0  | <b>21</b> ulasan produk</p>
+            <Rating maxRating={5} /> 4.5  | <b>21</b> ulasan produk</p>
             <hr />
                 <h2 className='fw-bold'>Rp 100.000</h2>
                 
-            <h4>Variant <Button.Group className='varian' buttons={['Creamy Chocolate', 'Red Velvet', 'Cheese Melt']} /></h4>
+            <h4>Variant <Button.Group className='varian' buttons={['Creamy Chocolate', 'Creamy Cheese', 'Sweet Pandan']} /></h4>
             <h4>Kuantitas
               <button className='quantity margin-left-3rem'>-</button>
               <input type="text" className='quantity-label' />
@@ -33,7 +33,7 @@ const Itemm = () => {
             <button class="ui primary basic button" onClick={() => navigate("/Keranjang")}style={{ cursor: "pointer" }}>Tambahkan ke
           <Icon name='cart' className='ms-2' /></button>
                 
-              <Button primary floated='' className='ms-3'>
+              <Button primary floated='' className='ms-3' onClick={() => navigate("/Checkout")}style={{ cursor: "pointer" }}>
                 Beli Sekarang
               </Button>
             </Item.Extra>
@@ -85,24 +85,65 @@ const Itemm = () => {
           </Row>
           <hr />
           <h2 className='fw-bold'>Anda Mungkin Juga Suka</h2>
-          <Row>
-            {ProdukTerbaru.map((Produk) => {
-              return <Col key={Produk.id} className='rounded mt-3'>
-              <img src={Produk.image} alt="unspalsh.com" className=' rounded shadow mt-3'/>
-              <h3 className='fw-bold'>Nama Produk</h3>
-              <p>Produk ini adalah produk asli indonesia</p>
-              <Row><Col>
-              <h3 className='fw-bold'><FaCartPlus className='ikoncart-p fa-xl me-2'/>Rp 10.000</h3>
-              </Col>
-              </Row>
-              
-            </Col>
+          <Row className='ms-5'>
+                      {ProdukTerbaru.slice(0, 1).map((Produk) => {
+              return (
+                <Col key={Produk.id} className="rounded">
+                  <img src="../img/Produk/Kopi.png" alt="unspalsh.com" className=" rounded shadow mt-3" />
+                  <h3 className="fw-bold" >Chek Hup Coffee (Malaysia)</h3>
+                  <p style={{ fontSize: '0.8rem' }} >Chek Hup Coffee merupakan minuman dari kopi panggang yang nikmat dan memiliki rasa yang khas.</p>
+                  <Row>
+                    <Col>
+                      <h5 className="fw-bold" >
+                        <FaCartPlus className="ikoncart-p fa-xl me-2" />
+                        Rp 10.000
+                      </h5>
+                    </Col>
+                  </Row>
+                </Col>
+              );
+            })}
+
+            {ProdukTerbaru.slice(0, 1).map((Produk) => {
+              return (
+                <Col key={Produk.id} className="rounded">
+                  <img src="../img/Produk/Banana.jpg" alt="unspalsh.com" className=" rounded shadow mt-3" />
+                  <h3 className="fw-bold">Banana Chips Rasa Matcha </h3>
+                  <p style={{ fontSize: '0.8rem' }} >Keripik pisang dengan taburan matcha diatasnya dan kaya akan rasa</p>
+                  <Row>
+                    <Col>
+                      <h5 className="fw-bold">
+                        <FaCartPlus className="ikoncart-p fa-xl me-2" />
+                        Rp 10.000
+                      </h5>
+                    </Col>
+                  </Row>
+                </Col>
+              );
+            })}        
+
+           {ProdukTerbaru.slice(0, 1).map((Produk) => {
+              return (
+                <Col key={Produk.id} className="rounded">
+                  <img src="../img/Produk/Nct.png"alt="unspalsh.com" className=" rounded shadow mt-3" />
+                  <h3 className="fw-bold">Lightstick NCT Dream Korea</h3>
+                  <p style={{ fontSize: '0.8rem' }} >Lampu stik khusus yang melambangkan fandom atau perkumpulan dari fans NCT.</p>
+                  <Row>
+                    <Col>
+                      <h5 className="fw-bold">
+                        <FaCartPlus className="ikoncart-p fa-xl me-2" />
+                        Rp 800.000
+                      </h5>
+                    </Col>
+                  </Row>
+                </Col>
+              );
             })}
           </Row>
       </Item.Group>
           </Col>
         </Row>
-      </Container>
+      </Container >
   )
 }
 

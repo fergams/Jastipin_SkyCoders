@@ -4,8 +4,10 @@ import NavbarComponentLogin from "../components/NavbarComponentLogin";
 import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import ModalKeluar from "../components/ModalKeluar"
+import { useNavigate } from "react-router-dom";   
 
 const Pembayaran = () => {
+  let navigate = useNavigate();
   return (
     <div className='homepage'>
     <NavbarComponentLogin/>
@@ -41,20 +43,6 @@ const Pembayaran = () => {
                 </Nav>
                 </Col>
                 <Col xs={12} md={8}>
-                <Nav className='tab'justify defaultActiveKey="/home">
-                    <Nav.Item>
-                     <Nav.Link href="/BelumDibayar" >Belum Dibayar</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link eventKey="link-1">Dikirim</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link eventKey="link-2">Selesai</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link eventKey="disabled">Beri Ulasan</Nav.Link>
-                    </Nav.Item>
-                </Nav>
                 <div className='tab-div mt-3 '>
                   <Row>
                     <Col>
@@ -83,7 +71,7 @@ const Pembayaran = () => {
                       </Row>
                       <Row>
                         <Col>
-                        <Button primary floated='right' className='aaa-btn mt-5'>Selesai</Button></Col>
+                        <Button primary floated='right' className='aaa-btn mt-5' onClick={() => navigate("/Dikirim")} style={{cursor:'pointer'}}>Selesai</Button></Col>
                       </Row>
                   </Row>
                 </div>

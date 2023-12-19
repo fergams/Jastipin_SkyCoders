@@ -4,8 +4,10 @@ import NavbarComponentLogin from "../components/NavbarComponentLogin";
 import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import ModalKeluar from "../components/ModalKeluar"
+import { useNavigate } from "react-router-dom"; 
 
 const BeriUlasan = () => {
+  let navigate = useNavigate();
   return (
     <div className='homepage'>
     <NavbarComponentLogin/>
@@ -41,18 +43,27 @@ const BeriUlasan = () => {
                 </Nav>
                 </Col>
                 <Col xs={12} md={8}>
+                <Nav defaultActiveKey="/Dikirim" className="flex-column mt-5">
+                <Nav.Link href="/Profil"><Icon name='user' className='' />Profil Saya</Nav.Link>
+                <Nav.Link href="/Dikirim"><Icon name='cart' className='' />Pesanan</Nav.Link>
+                <Nav.Link href="/Profil"><Icon name='chat' className='' />Obrolan</Nav.Link>
+                <Nav.Link href="/berjualan"><Icon name='money' className='' />Mulai Berjualan</Nav.Link>
+                <Nav.Link href="/Keluar"><ModalKeluar/></Nav.Link>
+                </Nav>
+                </Col>
+                <Col xs={12} md={8}>
                 <Nav className='tab'justify defaultActiveKey="/home">
-                    <Nav.Item>
+                <Nav.Item>
                      <Nav.Link href="/BelumDibayar" >Belum Dibayar</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link eventKey="link-1">Dikirim</Nav.Link>
+                    <Nav.Link href="/Dikirim">Dikirim</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link eventKey="link-2">Selesai</Nav.Link>
+                    <Nav.Link href="/Selesai">Selesai</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link eventKey="disabled">Beri Ulasan</Nav.Link>
+                    <Nav.Link href="/BeriUlasan">Beri Ulasan</Nav.Link>
                     </Nav.Item>
                 </Nav>
                 <div className='tab-div mt-3 '>
@@ -81,7 +92,7 @@ const BeriUlasan = () => {
                     </Row>
                       <Row>
                         <Col>
-                        <Button primary floated='right' className='mt-5'>
+                        <Button primary floated='right' className='mt-5' onClick={() => navigate("/UlasanProduk")} style={{cursor:'pointer'}}>
             Beri Ulasan
           </Button></Col>
                       </Row>

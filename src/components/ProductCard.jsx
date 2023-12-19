@@ -35,7 +35,7 @@ const ProductCard = () => {
       </Col>
       <Col md={3}>
         {/* Judul dan Variant Produk */}
-        <Card.Title>Croissant Arah Saudi</Card.Title>
+        <Card.Title>Croissant Arab Saudi</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Creamy Chocolate</Card.Subtitle>
       </Col>
       <Col md={2}>
