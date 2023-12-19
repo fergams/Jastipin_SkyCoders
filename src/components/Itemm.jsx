@@ -89,7 +89,7 @@ const Itemm = () => {
                       {ProdukTerbaru.slice(0, 1).map((Produk) => {
               return (
                 <Col key={Produk.id} className="rounded">
-                  <img src="../img/Kopi.png" alt="unspalsh.com" className=" rounded shadow mt-3" />
+                  <img src="../img/Kopi.png" alt="unspalsh.com" className="katalog rounded shadow mt-3" />
                   <h3 className="fw-bold" >Chek Hup Coffee (Malaysia)</h3>
                   <p style={{ fontSize: '0.8rem' }} >Chek Hup Coffee merupakan minuman dari kopi panggang yang nikmat dan memiliki rasa yang khas.</p>
                   <Row>
@@ -107,7 +107,7 @@ const Itemm = () => {
             {ProdukTerbaru.slice(0, 1).map((Produk) => {
               return (
                 <Col key={Produk.id} className="rounded">
-                  <img src="../img/Banana.jpg" alt="unspalsh.com" className=" rounded shadow mt-3" />
+                  <img src="../img/Banana.jpg" alt="unspalsh.com" className="katalog rounded shadow mt-3" />
                   <h3 className="fw-bold">Banana Chips Rasa Matcha </h3>
                   <p style={{ fontSize: '0.8rem' }} >Keripik pisang dengan taburan matcha diatasnya dan kaya akan rasa</p>
                   <Row>
@@ -125,7 +125,7 @@ const Itemm = () => {
            {ProdukTerbaru.slice(0, 1).map((Produk) => {
               return (
                 <Col key={Produk.id} className="rounded">
-                  <img src="../img/Nct.png"alt="unspalsh.com" className=" rounded shadow mt-3" />
+                  <img src="../img/Nct.png"alt="unspalsh.com" className="katalog rounded shadow mt-3" />
                   <h3 className="fw-bold">Lightstick NCT Dream Korea</h3>
                   <p style={{ fontSize: '0.8rem' }} >Lampu stik khusus yang melambangkan fandom atau perkumpulan dari fans NCT.</p>
                   <Row>
