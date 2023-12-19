@@ -695,3 +695,8 @@ header {
 .custum-file-upload input {
   display: none;
 }
+
+.katalog {
+  height: 180px;
+  width: 100%;
+}
