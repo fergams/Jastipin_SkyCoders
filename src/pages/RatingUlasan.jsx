@@ -4,8 +4,10 @@ import NavbarComponentLogin from "../components/NavbarComponentLogin";
 import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import ModalKeluar from "../components/ModalKeluar"
+import { useNavigate } from "react-router-dom";
 
 const RatingUlasan = () => {
+    let navigate = useNavigate();
   return (
     <div className='homepage'>
     <NavbarComponentLogin/>
@@ -83,7 +85,7 @@ const RatingUlasan = () => {
 </label></Row>
             <Row>
                 <Col>
-                <Button primary floated='right' className='btn-rating '>Kirim</Button>
+                <Button primary floated='right' className='btn-rating ' onClick={() => navigate("/BeriUlasan")} style={{cursor:'pointer'}}>Kirim</Button>
                 </Col>
             </Row>
             </Row>
@@ -123,7 +125,7 @@ const RatingUlasan = () => {
                 </Row>
             <Row>
                 <Col>
-                <Button primary floated='right' className='btn-rating '>Kirim</Button>
+                <Button primary floated='right' className='btn-rating ' onClick={() => navigate("/BeriUlasan")} style={{cursor:'pointer'}}>Kirim</Button>
                 </Col>
             </Row>
             </Row>

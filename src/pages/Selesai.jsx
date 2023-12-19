@@ -25,7 +25,7 @@ const Selesai = () => {
                 <div><img class="foto-avatar float-left" src="../src/assets/img/Testimonial/people-1.jpg"/>
                 </div><div>
                      <h2 className='foto-h3'><b>Username</b></h2>
-                     <a href="" className='foto-a'><Icon name='pencil' className='' />Ubah Profil</a>
+                     <a href="/Profil" className='foto-a'><Icon name='pencil' className='' />Ubah Profil</a>
                 </div>
                 </Col>
                 <Col xs={12} md={8}className='judul rounded'> <Icon name='arrow circle left'/>
