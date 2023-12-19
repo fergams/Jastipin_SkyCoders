@@ -47,8 +47,6 @@ const Checkout = () => {
               <hr />
               <div>
                 <Cardout />
-                <br />
-                <Cardout />
               </div>
             </div>
           </div>
@@ -57,11 +55,11 @@ const Checkout = () => {
             <div className="Pesanan">
               <div>
                 <p>Pesan:</p>
-                <p>Total Pesanan (5 Produk) :</p>
+                <p>Total Pesanan (2 Produk) :</p>
               </div>
               <div>
                 <p style={{ color: "rgba(0, 0, 0, 0.5)" }}>Silahkan Tinggalkan Pesan..</p>
-                <p>RP500.000</p>
+                <p>RP120.000</p>
               </div>
             </div>
           </div>

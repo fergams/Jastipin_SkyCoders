@@ -65,10 +65,10 @@ const Keranjang = () => {
                   {/* Bagian kanan (poin 4-6) */}
                   <Col className="right-section gap-3 ">
                     {/* 4. Total Produk yang terpilih */}
-                    <p>Total Produk: (5)</p>
+                    <p>Total Produk: (2)</p>
 
                     {/* 5. Total harga */}
-                    <p>RP 500.000</p>
+                    <p>RP 120.000</p>
 
                     {/* 6. Button Primary Bertuliskan "Checkout" */}
                     <div className="buttoncheck" > 

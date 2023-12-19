@@ -40,7 +40,7 @@ const ProductCard = () => {
       </Col>
       <Col md={2}>
         {/* Harga Awal */}
-        <Card.Text>Rp 100.000</Card.Text>
+        <Card.Text>Rp 15.000</Card.Text>
       </Col>
       <Col md={2} className="d-flex align-items-center">
         {/* Button Increment/Decrement */}
@@ -54,7 +54,7 @@ const ProductCard = () => {
       </Col>
       <Col md={2}>
         {/* Total Harga */}
-        <Card.Text>Total: Rp {quantity * 100000}</Card.Text>
+        <Card.Text>Total: Rp {quantity * 15000}</Card.Text>
       </Col>
       <Col md={1}>
         {/* Button Hapus */}
