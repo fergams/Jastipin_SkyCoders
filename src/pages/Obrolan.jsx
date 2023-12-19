@@ -64,12 +64,11 @@ const Obrolan = () => {
                 <p style={{ marginLeft: "10px", marginTop: "10px" }}>berkah.jastip</p>
               </div>
               <hr className="my-3 mx-0 border-2" style={{ borderColor: "dark", borderRight: "35%" }} />
-              <Col className="kirim" style={{ backgroundColor: "#1b9bee", width: "855px", height: "40px", marginRight: "20px", marginTop: "380px", justifyContent: "center", borderRadius: "10px" }}>
-                <div className=" col d-flex">
-                  <p style={{ fontSize: "10px", fontWeight: "lighter", paddingTop: "13px", paddingBottom: "5px", borderRadius: "10px", textAlign: "left", marginLeft: "10px" }}>Kirim Pesan...</p>
-                  <FontAwesomeIcon icon="fa-thin fa-paper-plane" className="mr-2" />
-                </div>
-              </Col>
+              <Row>
+                <Form.Group className="mb-1 ms-0" controlId="exampleForm.ControlTextarea1">
+                  <Form.Control as="textarea" rows={2} placeholder="Ketik pesan" style={{ marginTop: "350px" }} />
+                </Form.Group>
+              </Row>
             </Col>
           </Row>
         </div>
