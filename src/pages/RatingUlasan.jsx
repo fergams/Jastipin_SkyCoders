@@ -1,10 +1,12 @@
 import React from 'react'
-import {Container, Row, Col, Tab, Tabs, Nav, Form} from "react-bootstrap";  
+import {Container, Row, Col, Tab, Tabs, Nav, Form, Card} from "react-bootstrap";  
 import NavbarComponentLogin from "../components/NavbarComponentLogin";  
 import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import ModalKeluar from "../components/ModalKeluar"
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
+import produk from "../assets/img/produk/im.png";
+import "../Style/Cardout.css";
 
 const RatingUlasan = () => {
     let navigate = useNavigate();
@@ -26,24 +28,20 @@ const RatingUlasan = () => {
                 </Col>
             </Row>
             <Row className='tab-div-rating mt-3'>
-                <Col >
-                <div class="ui items">
-                <div class="item">
-                 <div class="ui small image mt-4 ms-3">
-                    <img src="./src/assets/img/Produk/Produk-1.jpg"/>
-                 </div>
-                <div class="content mt-4">
-                    <div class="header">Makaroni Bakar</div>
-                <div class="meta">
-                    <span class="price">Variant black</span>
-                </div>
-                <div class="description">
-                    <p>Rp 100.000</p>
-                </div>
-                </div></div></div>
-                </Col>
+            <Col md={2} className='mt-4 ms-4 mb-4'>
+            {/* Gambar */}
+            <Card.Img variant="top" src={produk} alt="Gambar Barang" />
+          </Col>
+          <Col md={7} className='mt-4'>
+            {/* Nama Barang */}
+            <Card.Title className="nama-barang" style={{fontSize:"18px"}} >Croissant Arab Saudi</Card.Title>
+            {/* Variant Barang */}
+            <Card.Subtitle className="mb-2 text-muted font-weight-bold">Creamy Chocolate</Card.Subtitle>
+            {/* Harga Barang */}
+            <Card.Text className="harga-barang" style={{fontSize:"18px"}} >Rp 15.000</Card.Text>
+          </Col>
                 <Col>
-                <div className='star-ratin me-3 mt-3'>
+                <div className='star-ratin mt-5'>
                 <Icon name='star' className='big' />
                 <Icon name='star' className='big' />
                 <Icon name='star' className='big' />
@@ -102,9 +100,9 @@ const RatingUlasan = () => {
                     <img src="./src/assets/img/Produk/Produk-1.jpg"/>
                  </div>
                 <div class="content mt-4">
-                    <div class="header">Makaroni Bakar</div>
+                    <div class="header">Toko Agus</div>
                 <div class="meta">
-                    <span class="price"><Icon name='map marker' className='' />Variant black</span>
+                    <span class="price"><Icon name='map marker' className='' />Kota Batam</span>
                 </div>
                 <div class="description">
                 </div>
@@ -120,7 +118,7 @@ const RatingUlasan = () => {
                 </Col>
                 <Row>
                 <Form.Group className="mb-3 ms-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Control as="textarea" rows={2} placeholder='Beritahu pengguna lain mengapa Anda sangat menyukai toko ini.....'/>
+        <Form.Control as="textarea" rows={5} placeholder='Beritahu pengguna lain mengapa Anda sangat menyukai toko ini.....'/>
       </Form.Group>
                 </Row>
             <Row>
