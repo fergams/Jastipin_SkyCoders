@@ -24,17 +24,17 @@ import StatusPesanan from "./pages/StatusPesanan";
 import RatingUlasan from "./pages/RatingUlasan";
 import TentangKami from "./pages/TentangKami";
 import Faq from "./pages/Faq";
-import Profil from './pages/Profil';
-import UlasanProduk from './pages/UlasanProduk';
+import Profil from "./pages/Profil";
+import UlasanProduk from "./pages/UlasanProduk";
 import Checkout from "./pages/Checkout";
 import Keranjang from "./pages/Keranjang"
 import Toko from "./pages/Toko";
+import Keranjang from "./pages/Keranjang";
+import Obrolan from "./pages/Obrolan";
 
 function App() {
   return (
     <div>
-
-
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/Autentikasi" Component={Autentikasi} />
@@ -64,10 +64,10 @@ function App() {
         <Route path="/Checkout" Component={Checkout}/>
         <Route path="/Keranjang" Component={Keranjang}/>
         <Route path="/Toko" Component={Toko}/>
-        
+        <Route path="/Checkout" Component={Checkout} />
+        <Route path="/Keranjang" Component={Keranjang} />
+        <Route path="/Obrolan" Component={Obrolan} />
       </Routes>
-
-
     </div>
   );
 }
