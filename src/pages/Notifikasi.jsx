@@ -24,7 +24,7 @@ const Notifikasi = () => {
         <Col>
         <div>
     <img class="avatar" src="../src/assets/img/Testimonial/people-1.jpg"/>
-      <a class="fw-bold ms-3">Daniel Louise</a>
+      <a class="fw-bold ms-3">berkah.jastip</a>
       </div>
         </Col>
         <Col>
@@ -39,7 +39,7 @@ const Notifikasi = () => {
         <Col>
       <div>
     <img class="avatar" src="../src/assets/img/Testimonial/people-1.jpg"/>
-      <a class="fw-bold ms-3">Daniel Louise</a>
+      <a class="fw-bold ms-3">jastipcirebon</a>
       </div>
         </Col>
         <Col>
@@ -54,7 +54,7 @@ const Notifikasi = () => {
         <Col>
       <div>
     <img class="avatar" src="../src/assets/img/Testimonial/people-1.jpg"/>
-      <a class="fw-bold ms-3">Daniel Louise</a>
+      <a class="fw-bold ms-3">Kuyjastip</a>
       </div>
         </Col>
         <Col>
