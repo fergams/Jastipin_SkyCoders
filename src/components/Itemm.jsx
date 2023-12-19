@@ -3,7 +3,10 @@ import {Container, Row, Col} from "react-bootstrap";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import {ProdukTerbaru} from "../data/index";
 import {FaCartPlus} from "react-icons/fa"   
+import '../Style/Profil.css'
 import { useNavigate } from "react-router-dom";   
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencilAlt,faUser, faStickyNote, faShoppingCart, faShop, faSignOut, faComments } from '@fortawesome/free-solid-svg-icons';
 
 const Itemm = () => {
   let navigate = useNavigate();
@@ -41,7 +44,7 @@ const Itemm = () => {
           <div class="ui items">
                     <div class="item">
                     <div class="ui small image mt-4 ms-3 rounded-5">
-                        <img src="./src/assets/img/toko.png"/>
+                        <img src="./img/toko.png"/>
                     </div>
                     <div class="content mt-4">
                         <div class="header">Berkah.Jastip</div>
@@ -54,7 +57,7 @@ const Itemm = () => {
                     <button class="ui primary basic button">Chat Sekarang
           <Icon name='chat' className='ms-2' /></button>
           <button class="ui primary basic button ms-3">Kunjungi Toko
-          <Icon name='store' className='ms-2' /></button>
+          <FontAwesomeIcon icon={faShop} className='ms-3'/></button>
           </Item.Content>
         </Item>
           <Row>
