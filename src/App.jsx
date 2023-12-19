@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-
 import Home from "./pages/Home";
 import HomeLogin from "./pages/HomeLogin";
 import Notifikasi from "./pages/Notifikasi";
@@ -26,16 +25,15 @@ import StatusPesanan from "./pages/StatusPesanan";
 import RatingUlasan from "./pages/RatingUlasan";
 import TentangKami from "./pages/TentangKami";
 import Faq from "./pages/Faq";
-import Profil from './pages/Profil';
-import UlasanProduk from './pages/UlasanProduk';
+import Profil from "./pages/Profil";
+import UlasanProduk from "./pages/UlasanProduk";
 import Checkout from "./pages/Checkout";
-import Keranjang from "./pages/Keranjang"
+import Keranjang from "./pages/Keranjang";
+import Obrolan from "./pages/Obrolan";
 
 function App() {
   return (
     <div>
-
-
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/Autentikasi" Component={Autentikasi} />
@@ -62,12 +60,10 @@ function App() {
         <Route path="/Faq" Component={Faq} />
         <Route path="/Profil" Component={Profil} />
         <Route path="/UlasanProduk" Component={UlasanProduk} />
-        <Route path="/Checkout" Component={Checkout}/>
-        <Route path="/Keranjang" Component={Keranjang}/>
-        
+        <Route path="/Checkout" Component={Checkout} />
+        <Route path="/Keranjang" Component={Keranjang} />
+        <Route path="/Obrolan" Component={Obrolan} />
       </Routes>
-
-
     </div>
   );
 }
