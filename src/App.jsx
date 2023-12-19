@@ -29,7 +29,6 @@ import UlasanProduk from "./pages/UlasanProduk";
 import Checkout from "./pages/Checkout";
 import Keranjang from "./pages/Keranjang"
 import Toko from "./pages/Toko";
-import Keranjang from "./pages/Keranjang";
 import Obrolan from "./pages/Obrolan";
 
 function App() {
