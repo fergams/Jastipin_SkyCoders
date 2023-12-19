@@ -30,6 +30,7 @@ import Checkout from "./pages/Checkout";
 import Keranjang from "./pages/Keranjang"
 import Toko from "./pages/Toko";
 import Obrolan from "./pages/Obrolan";
+import MulaiBerjualan from "./pages/MulaiBerjualan1";
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
         <Route path="/Checkout" Component={Checkout} />
         <Route path="/Keranjang" Component={Keranjang} />
         <Route path="/Obrolan" Component={Obrolan} />
+        <Route path="/MulaiBerjualan" Component={MulaiBerjualan}/>
       </Routes>
     </div>
   );
