@@ -61,7 +61,7 @@ const Checkout = () => {
               </div>
               <div>
                 <p style={{ color: "rgba(0, 0, 0, 0.5)" }}>Silahkan Tinggalkan Pesan..</p>
-                <p>RP120.000</p>
+                <p>RP500.000</p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ const Checkout = () => {
             <div className="Totall d-flex gap-5 ">
               <div>
                 <p>Total Pembayaran</p>
-                <p>RP 120.000</p>
+                <p>RP 500.000</p>
               </div>
               <div>
                 <Button variant="primary" onClick={() => navigate("/Pembayaran")} style={{cursor:'pointer'}}>Buat Pesanan</Button>
