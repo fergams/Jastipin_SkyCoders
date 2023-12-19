@@ -8,7 +8,7 @@ import Backcomp from "../components/Backcomp";
 import Cardout from "../components/Cardout.jsx";
 import ToggleButton from "../components/ToggleButton.jsx";
 import Button from "react-bootstrap/Button";
-import { useNavigate } from "react-router-dom";   
+import { useNavigate } from "react-router-dom";
 
 import "../Style/Checkout.css";
 
@@ -27,7 +27,7 @@ const Checkout = () => {
           <div className="isi d-flex justify-content-between px-3 ">
             <div>
               <div className=" p-3 gap-2  d-flex " style={{ fontSize: "20px" }}>
-                <IoLocationSharp style={{ width:"20px", height:"25px", color:"#0081C9" }} />
+                <IoLocationSharp style={{ width: "20px", height: "25px", color: "#0081C9" }} />
                 Alamat Pengiriman
               </div>
               <div className="" style={{ paddingLeft: "40px" }}>
@@ -36,7 +36,7 @@ const Checkout = () => {
                 <p>Batam, Kepulauan Riau.</p>
               </div>
             </div>
-            <IoIosArrowForward style={{ width:"30px", height:"30px", color:"#0081C9" }} />
+            <IoIosArrowForward style={{ width: "30px", height: "30px", color: "#0081C9" }} />
           </div>
           <br />
           <div className="barang">
@@ -85,7 +85,9 @@ const Checkout = () => {
                 <p>RP 120.000</p>
               </div>
               <div>
-                <Button variant="primary" onClick={() => navigate("/Pembayaran")} style={{cursor:'pointer'}}>Buat Pesanan</Button>
+                <Button variant="primary" onClick={() => navigate("/Pembayaran")} style={{ cursor: "pointer" }}>
+                  Buat Pesanan
+                </Button>
               </div>
             </div>
           </div>
