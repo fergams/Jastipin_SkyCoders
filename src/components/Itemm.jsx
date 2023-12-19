@@ -21,7 +21,7 @@ const Itemm = () => {
             <p  onClick={() => navigate("/UlasanProduk")} style={{cursor:'pointer'}}>
             <Rating maxRating={5} /> 4.5  | <b>21</b> ulasan produk</p>
             <hr />
-                <h2 className='fw-bold'>Rp 100.000</h2>
+                <h2 className='fw-bold'>Rp 15.000</h2>
                 
             <h4>Variant <Button.Group className='varian' buttons={['Creamy Chocolate', 'Creamy Cheese', 'Sweet Pandan']} /></h4>
             <h4>Kuantitas
@@ -41,10 +41,10 @@ const Itemm = () => {
           <div class="ui items">
                     <div class="item">
                     <div class="ui small image mt-4 ms-3 rounded-5">
-                        <img src="./src/assets/img/Produk/Produk-1.jpg"/>
+                        <img src="./src/assets/img/toko.png"/>
                     </div>
                     <div class="content mt-4">
-                        <div class="header">Toko Agus</div>
+                        <div class="header">Berkah.Jastip</div>
                     <div class="meta">
                         <span class="price"><Icon name='map marker' className='' />KOTA BATAM</span>
                     </div>
