@@ -3,7 +3,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import produk from "../assets/img/produk/im.png";
 import "../Style/Cardout.css";
 
-const Cardout = () => {
+const Cardout = () => { 
   return (
     <div>
       <Card className="itemss  d-flex  " style={{ backgroundImage: "none;", border:"none" }}>

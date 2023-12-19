@@ -172,7 +172,7 @@ const KatalogMakanan = () => {
                   <Row>
                     <Col>
                       <h5 className="fw-bold">
-                        <FaCartPlus className="ikoncart-p fa-xl me-2" />
+                        <FaCartPlus className="ikoncart-p fa-xl me-2"  onClick={() => navigate("/DetailProduk")} style={{cursor:'pointer'}}/>
                         Rp 15.000
                       </h5>
                     </Col>

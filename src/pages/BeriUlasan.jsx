@@ -1,10 +1,12 @@
 import React from 'react'
-import {Container, Row, Col, Tab, Tabs, Nav} from "react-bootstrap";  
+import {Container, Row, Col, Tab, Tabs, Nav, Card} from "react-bootstrap";  
 import NavbarComponentLogin from "../components/NavbarComponentLogin";  
 import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
 import ModalKeluar from "../components/ModalKeluar"
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";   
+import produk from "../assets/img/produk/im.png";
+import "../Style/Cardout.css";
 
 const BeriUlasan = () => {
   let navigate = useNavigate();
@@ -62,23 +64,38 @@ const BeriUlasan = () => {
                     <h2 className='tab-toko mt-2'>Berkah.Jastip</h2>
                   </Row>
                   <Row>
-                    <Col>
-                    <h2 class="ui header mt-3 ms-4 w-100">
-                      <img  src="../src/assets/img/Produk/Produk-1.jpg"/>
-                      <div class="content font-weight-normal">Kulkas
-                      <div class="sub header">Variant: Black</div>
-                      </div>
-                    </h2>
-                    </Col>
-                    <Col>
-                    <p className='float-right me-2 mb-5'>1x</p>
-                    </Col>
+                  <Col md={2} className='mt-4 ms-4'>
+            {/* Gambar */}
+            <Card.Img variant="top" src={produk} alt="Gambar Barang" />
+          </Col>
+          <Col md={8} className='mt-4'>
+            {/* Nama Barang */}
+            <Card.Title className="nama-barang" style={{fontSize:"18px"}} >Croissant Arab Saudi</Card.Title>
+            {/* Variant Barang */}
+            <Card.Subtitle className="mb-2 text-muted font-weight-bold">Creamy Chocolate</Card.Subtitle>
+            {/* Harga Barang */}
+            <Card.Text className="harga-barang" style={{fontSize:"18px"}} >Rp 15.000</Card.Text>
+          </Col>
+          <Col className=' align-text-bottom mt-4 '><p>5x</p></Col>
+          <Col md={2} className='mt-4 ms-4'>
+            {/* Gambar */}
+            <Card.Img variant="top" src={produk} alt="Gambar Barang" />
+          </Col>
+          <Col md={8} className='mt-4'>
+            {/* Nama Barang */}
+            <Card.Title className="nama-barang" style={{fontSize:"18px"}} >Croissant Arab Saudi</Card.Title>
+            {/* Variant Barang */}
+            <Card.Subtitle className="mb-2 text-muted font-weight-bold">Creamy Cheese</Card.Subtitle>
+            {/* Harga Barang */}
+            <Card.Text className="harga-barang" style={{fontSize:"18px"}} >Rp 15.000</Card.Text>
+          </Col>
+          <Col className=' align-text-bottom mt-4 '><p>3x</p></Col>
                     <Row>
                       <Col>
-                      <p className='ms-4'>1 Produk</p>
+                      <p className='ms-4 mt-4'>2 Produk</p>
                       </Col>
                       <Col>
-                      <p className='anu me-3'>Rp100.000</p>
+                      <p className='anu me-3'>Rp120.000</p>
                       </Col>
                     </Row>
                       <Row>
