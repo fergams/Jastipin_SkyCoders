@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt,faUser, faStickyNote, faShoppingCart, faShop, faSignOut, faComments } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../components/Footer'
 import { useNavigate } from "react-router-dom";
+import ModalKeluar from '../components/ModalKeluar'
 
 const Profil = () => {
 const iconSize = '2x';
@@ -49,7 +50,7 @@ let navigate = useNavigate();
                     </div>
                     <div className="list1 d-flex align-items-center">
                         <FontAwesomeIcon icon={faSignOut} className={`mr-2 fa-${iconSize}`} />
-                        <p className='' onClick={() => navigate("/ModalKeluar")} style={{fontSize:'20px', cursor:'pointer'}}>Keluar</p>
+                        <ModalKeluar/>
                     </div>
                 </div>
             </div>
