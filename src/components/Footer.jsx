@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
 let navigate = useNavigate();
   return (
-    <div className='footer'>
+    <div className='footer mt-5'>
       <div className="footer1">
         < img
           src={Logo_Jastip}
