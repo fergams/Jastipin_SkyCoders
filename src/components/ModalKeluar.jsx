@@ -12,7 +12,7 @@ function ModalKeluar() {
   const handleShow = () => setShow(true);
   return (
     <div>
-      <p onClick={handleShow}><Icon name='x' className='' />
+      <p onClick={handleShow}>
         Keluar
       </p>
 

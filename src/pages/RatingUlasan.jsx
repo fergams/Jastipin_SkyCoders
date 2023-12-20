@@ -3,9 +3,10 @@ import { Container, Row, Col, Tab, Tabs, Nav, Form } from "react-bootstrap";
 import NavbarComponentLogin from "../components/NavbarComponentLogin";
 import Footer from "../components/Footer";
 import { Button, Icon, Image, Item, Label, Rating } from "semantic-ui-react";
-import ModalKeluar from "../components/ModalKeluar";
+import { useNavigate } from "react-router-dom";
 
 const RatingUlasan = () => {
+let navigate = useNavigate();
   return (
     <div className="homepage">
       <NavbarComponentLogin />
@@ -127,7 +128,7 @@ const RatingUlasan = () => {
           </Row>
           <Row>
             <Col>
-              <Button primary floated="right" className="btn-rating ">
+              <Button onClick={() => navigate("/TelahDinilai")} primary floated="right" className="btn-rating ">
                 Kirim
               </Button>
             </Col>
@@ -176,7 +177,7 @@ const RatingUlasan = () => {
           </Row>
           <Row>
             <Col>
-              <Button primary floated="right" className="btn-rating ">
+              <Button onClick={() => navigate("/TelahDinilai")} primary floated="right" className="btn-rating ">
                 Kirim
               </Button>
             </Col>

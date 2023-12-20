@@ -1,78 +1,89 @@
-import React from 'react'
-import {Container, Row, Col, Tab, Tabs, Nav} from "react-bootstrap";  
-import NavbarComponentLogin from "../components/NavbarComponentLogin";  
-import Footer from "../components/Footer";
-import { Button, Icon, Image, Item, Label, Rating } from 'semantic-ui-react'
-import ModalKeluar from "../components/ModalKeluar"
+import NavbarComponentLogin from '../components/NavbarComponentLogin'
+import '../Style/Profil.css'
+import people from '../assets/img/testimonial/people-1.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencilAlt,faUser, faStickyNote, faShoppingCart, faShop, faSignOut, faComments } from '@fortawesome/free-solid-svg-icons';
+import Footer from '../components/Footer'
+import { useNavigate } from "react-router-dom";
+import ModalKeluar from '../components/ModalKeluar'
+import kembali from '../assets/img/kembali.png'
+import belum from '../assets/img/belum.png'
 
-const StatusPesanan = () => {
-  return (
-    <div className='homepage'>
-    <NavbarComponentLogin/>
-    <header className="khat d-flex align-items-center">
-    <Container>
-      <Row className="header-box align-center mt-4"></Row>
-      <Row className="header-box align-center fw-bold mb-4 color-blue"><h5> Jastip.in</h5></Row>
-      <div></div>
-      <div></div>
-    </Container>
-    </header>
-        <Container>
-            <Row>
-                <Col xs={6} md={4} className='mt-5'>
-                <div><img class="foto-avatar float-left" src="../src/assets/img/Testimonial/people-1.jpg"/>
-                </div><div>
-                     <h2 className='foto-h3'><b>Angel Safitri</b></h2>
-                     <a href="/Profil" className='foto-a'><Icon name='pencil' className='' />Ubah Profil</a>
+const BelumDibayar = () => {
+const iconSize = '2x';
+let navigate = useNavigate();
+    return (
+    <>
+        <div className="" style={{height:'125px', backgroundColor:'#0081C9'}}>
+            <NavbarComponentLogin />
+        </div>
+        <div className="profile d-flex">
+            <div className="slidebar bg-white col-auto col-md-2.6 col-lg-3 min-vh-90" style={{paddingBottom:'20px'}}>
+                <div className="logo-profile d-flex align-items-center">
+                    <img src= {people} alt="peaple-1" 
+                    className='img-fluif rounded-circle ml-4 mt-4'
+                    style={{width:'80px', height:'80px', marginLeft:'20px'}}
+                    />
+                    <div className="teks-prof">
+                        <p>Angel Safitri</p>
+                        <div className="d-flex align-items-center">
+                            <FontAwesomeIcon icon={faPencilAlt} className="mr-2" />
+                            <p className='' style={{fontSize:'14px'}}>Ubah Profile</p>
+                        </div>
+                    </div>
                 </div>
-                </Col>
-                <Col xs={12} md={8}className='judul rounded'> <Icon name='arrow circle left'/>
-                Status Pesanan Saya
-                </Col>
-            </Row>
-            <Row>
-            <Col xs={6} md={4} >
-                <Nav defaultActiveKey="/StatusPesanan" className="flex-column mt-5">
-                <Nav.Link href="/Profil"><Icon name='user' className='' />Profil Saya</Nav.Link>
-                <Nav.Link href="/StatusPesanan"><Icon name='cart' className='' />Pesanan</Nav.Link>
-                <Nav.Link href="/Obrolan"><Icon name='chat' className='' />Obrolan</Nav.Link>
-                <Nav.Link href="/berjualan"><Icon name='money' className='' />Mulai Berjualan</Nav.Link>
-                <Nav.Link><ModalKeluar/></Nav.Link>
-                </Nav>
-                </Col>
-                <Col xs={12} md={8}>
-                <Nav className='tab'justify defaultActiveKey="/home">
-                <Nav.Item>
-                     <Nav.Link href="/BelumDibayar" >Belum Dibayar</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link href="/Dikirim">Dikirim</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link href="/Selesai">Selesai</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                    <Nav.Link href="/BeriUlasan">Beri Ulasan</Nav.Link>
-                    </Nav.Item>
-                </Nav>
-                <div className='tab-div-status mt-3 '>
-                <Icon name='clipboard outline' className='massive ms-2' /><h3>Belum ada pesanan</h3>
-                
+                <hr className='my-4 mx-4 border-2' style={{borderColor:'dark', borderWidth:'3'}} />
+                <div className="list">
+                    <div className="list1 d-flex  align-items-center">
+                        <FontAwesomeIcon icon={faUser} className={`mr-2 fa-${iconSize}`} />
+                        <p className='' onClick={() => navigate("/Profil")} style={{fontSize:'20px', cursor:'pointer'}}>Profile Saya</p>
+                    </div>
+                    <div className="list1 d-flex align-items-center">
+                        <FontAwesomeIcon icon={faShoppingCart} className={`mr-2 fa-${iconSize}`} />
+                        <p className='' onClick={() => navigate("/StatusPesanan")} style={{fontSize:'20px', cursor:'pointer', color:'#0081c9'}}>Pesanan</p>
+                    </div>
+                    <div className="list1 d-flex align-items-center">
+                        <FontAwesomeIcon icon={faComments} className={`mr-2 fa-${iconSize}`} />
+                        <p className='' onClick={() => navigate("/Obrolan")} style={{fontSize:'20px', cursor:'pointer'}}>Obrolan</p>
+                    </div>
+                    <div className="list1 d-flex align-items-center">
+                        <FontAwesomeIcon icon={faShop} className={`mr-2 fa-${iconSize}`} />
+                        <p className='' onClick={() => navigate("/MulaiBerjualan")} style={{fontSize:'20px', cursor:'pointer'}}>Mulai Berjualan</p>
+                    </div>
+                    <div className="list1 d-flex align-items-center" style={{cursor:'pointer'}}>
+                        <FontAwesomeIcon icon={faSignOut} className={`mr-2 fa-${iconSize}`} />
+                        <ModalKeluar/>
+                    </div>
                 </div>
-                </Col>
-            </Row>
-            <Row>
-            <Col xs={6} md={4} >
-
-            </Col>
-            <Col xs={12} md={8} >
+            </div>
+            <div className="content" style={{ width:'80%'}}>
+            <div className="content ">
+              <div className="status d-flex" style={{backgroundColor:'#D7E3F6',height:'40px', width:'850px',borderRadius:'10px', marginTop:'2%'}}>
+                <div className="1">
+                     <img src={kembali} className='q' alt="" style={{height:'30px', marginLeft:'15px', marginTop:'5px'}}/>
+                </div>
+               <div className="2">
+                    <h1 style={{marginLeft:'10px'}}>Status Pesanan Saya</h1>
+               </div>
                 
-            </Col>
-            </Row>
-        </Container>
-        <Footer/>
-    </div>
-  )
+              </div>
+              <div className="navbarstatus d-flex" style={{backgroundColor:'#D7E3F6',height:'40px', width:'850px',borderRadius:'10px', marginTop:'2%'}}>
+                <p onClick={() => navigate("/StatusPesanan")} style={{color:'#0081c9', cursor:'pointer'}}>Belum Bayar</p>
+                <p onClick={() => navigate("/Dikirim")} style={{cursor:'pointer'}}>Dikirim</p>
+                <p onClick={() => navigate("/Selesai")} style={{cursor:'pointer'}}>Selesai</p>
+                <p onClick={() => navigate("/BeriUlasan")} style={{cursor:'pointer'}}>Beri ulasan</p>
+              </div>
+              <div className="main" style={{backgroundColor:'#d7e3f6', borderRadius:'10px', marginTop:'2%', width:'93%', paddingBottom:'20px'}}>
+                <img src={belum} alt=""  style={{width:'100%', marginTop:'2%'}}/>
+                <button class="Bayar" onClick={() => navigate("/Pembayaran")} style={{marginLeft:'700px', padding:'10px', borderRadius:'5px', backgroundColor:'#0081c9', border:'none', color:'white'}}>Bayar Sekarang</button>
+              </div>
+              
+            </div>
+            </div>
+        </div>
+        <Footer />
+    </>
+    )
 }
 
-export default StatusPesanan
+export default BelumDibayar

@@ -6,8 +6,10 @@ import { faPencilAlt,faUser, faStickyNote, faShoppingCart, faShop, faSignOut, fa
 import Footer from '../components/Footer'
 import { useNavigate } from "react-router-dom";
 import ModalKeluar from '../components/ModalKeluar'
+import kembali from '../assets/img/kembali.png'
+import belum from '../assets/img/belum.png'
 
-const Profil = () => {
+const TelahDinilai = () => {
 const iconSize = '2x';
 let navigate = useNavigate();
     return (
@@ -34,11 +36,11 @@ let navigate = useNavigate();
                 <div className="list">
                     <div className="list1 d-flex  align-items-center">
                         <FontAwesomeIcon icon={faUser} className={`mr-2 fa-${iconSize}`} />
-                        <p style={{color:'#0081C9'}}>Profile Saya</p>
+                        <p className='' onClick={() => navigate("/Profil")} style={{fontSize:'20px', cursor:'pointer'}}>Profile Saya</p>
                     </div>
                     <div className="list1 d-flex align-items-center">
                         <FontAwesomeIcon icon={faShoppingCart} className={`mr-2 fa-${iconSize}`} />
-                        <p className='' onClick={() => navigate("/StatusPesanan")} style={{fontSize:'20px', cursor:'pointer'}}>Pesanan</p>
+                        <p className='' onClick={() => navigate("/StatusPesanan")} style={{fontSize:'20px', cursor:'pointer', color:'#0081c9'}}>Pesanan</p>
                     </div>
                     <div className="list1 d-flex align-items-center">
                         <FontAwesomeIcon icon={faComments} className={`mr-2 fa-${iconSize}`} />
@@ -48,34 +50,38 @@ let navigate = useNavigate();
                         <FontAwesomeIcon icon={faShop} className={`mr-2 fa-${iconSize}`} />
                         <p className='' onClick={() => navigate("/MulaiBerjualan")} style={{fontSize:'20px', cursor:'pointer'}}>Mulai Berjualan</p>
                     </div>
-                    <div className="list1 d-flex align-items-center" style={{cursor:'pointer'}}>
+                    <div className="list1 d-flex align-items-center">
                         <FontAwesomeIcon icon={faSignOut} className={`mr-2 fa-${iconSize}`} />
                         <ModalKeluar/>
                     </div>
                 </div>
             </div>
-            <div className="content" style={{backgroundColor:'#D7E3F6', width:'80%'}}>
-             <div className="" style={{marginTop:'2%', marginLeft:'7%'}}>
-                <p style={{fontSize:'25px', fontWeight:'bold', letterSpacing:'2px', marginBottom:'0'}}>PROFILE</p>
-                <p style={{fontSize:'18px', maxWidth:'80%', marginTop:'5px', marginBottom:'0', lineHeight:'1.2'}}>Kelola informasi profil anda untuk mengontrol, melindungi dan mengamankan akun.</p>
-             </div>
-             <hr className='my-4 mx-4 border-2' style={{borderColor:'dark', borderWidth:'3', marginTop:'0'}} />
-             <form action="">
-                <form class="" style={{marginLeft:'7%'}}>
-                    <p style={{marginBottom:'15px', fontWeight:'bold'}}>NAMA</p>
-                    <input type="Nama" class="inputl" placeholder="Angel Safitri"/>
-                    <p style={{marginBottom:'10px', fontWeight:'bold', marginTop:'10px'}}>Email</p>
-                    <input type="Nama" class="inputl" placeholder="Angel.safitri@gmail.com"/>
-                    <p style={{marginBottom:'10px',marginTop:'10px', fontWeight:'bold'}}>NAMA PENGGUNA</p>
-                    <input type="Nama" class="inputl" placeholder="Angel123"/>
-                    <p style={{marginBottom:'10px',marginTop:'10px', fontWeight:'bold'}}>ALAMAT</p>
-                    <input type="Nama" class="inputl" placeholder="Batam"/>
-                    <p style={{marginBottom:'10px',marginTop:'10px', fontWeight:'bold'}}>NO. TELP</p>
-                    <input type="Nama" class="inputl" placeholder="+(62) 895-3781-5672"/>
-                    <button class="Tombol-Simpan" onClick={() => navigate("")}>Simpan</button>
-                    
-                </form>
-            </form>
+            <div className="content" style={{ width:'80%'}}>
+            <div className="content ">
+              <div className="status d-flex" style={{backgroundColor:'#D7E3F6',height:'40px', width:'850px',borderRadius:'10px', marginTop:'2%'}}>
+                <div className="1">
+                     <img src={kembali} className='q' alt="" style={{height:'30px', marginLeft:'15px', marginTop:'5px'}}/>
+                </div>
+               <div className="2">
+                    <h1 style={{marginLeft:'10px'}}>Status Pesanan Saya</h1>
+               </div>
+                
+              </div>
+              <div className="navbarstatus d-flex" style={{backgroundColor:'#D7E3F6',height:'40px', width:'850px',borderRadius:'10px', marginTop:'2%'}}>
+                <p onClick={() => navigate("/StatusPesanan")} style={{cursor:'pointer'}}>Belum Bayar</p>
+                <p onClick={() => navigate("/Dikirim")} style={{cursor:'pointer'}}>Dikirim</p>
+                <p onClick={() => navigate("/Selesai")} style={{cursor:'pointer'}}>Selesai</p>
+                <p onClick={() => navigate("/BeriUlasan")} style={{color:'#0081c9',cursor:'pointer'}}>Beri ulasan</p>
+              </div>
+              <div className="main" style={{backgroundColor:'#d7e3f6', borderRadius:'10px', marginTop:'2%', width:'93%', paddingBottom:'20px'}}>
+                <img src={belum} alt=""  style={{width:'100%', marginTop:'2%'}}/>
+                <div className="d-flex">
+                  <button class="Bayar" onClick={() => navigate("/TelahDinilai")} style={{padding:'8px 25px', borderRadius:'5px', backgroundColor:'#0081c9', border:'none', marginLeft:'80%', color:'white'}}>Telah Dinilai</button>
+                </div>
+                
+              </div>
+              
+            </div>
             </div>
         </div>
         <Footer />
@@ -83,4 +89,4 @@ let navigate = useNavigate();
     )
 }
 
-export default Profil
+export default TelahDinilai
